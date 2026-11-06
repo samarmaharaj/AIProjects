@@ -1,0 +1,341 @@
+antecedent,consequent,support,confidence,lift,leverage,conviction
+Treatment=Oxygen_Therapy,Disease=Pneumonia,0.1,1.0,5.5556,0.082,inf
+LOS_Category=Extended(15d+) + Treatment=Surgery,Charges_Category=High_Cost,0.12,1.0,3.0075,0.0801,inf
+Admission_Type=Urgent + Age_Group=36-50,Diabetes=No,0.1,1.0,1.3115,0.0238,inf
+Diabetes=No + LOS_Category=Extended(15d+) + Treatment=Surgery,Charges_Category=High_Cost,0.1,1.0,3.0075,0.0668,inf
+Age_Group=36-50 + BP_Category=Elevated,Diabetes=No,0.115,0.9787,1.2836,0.0254,11.1625
+Gender=Male + Treatment=Surgery,Charges_Category=High_Cost,0.1125,0.9783,2.9421,0.0743,30.705
+Disease=Fracture + Outcome=Recovered,Diabetes=No,0.1075,0.9773,1.2817,0.0236,10.45
+Diabetes=No + LOS_Category=Extended(15d+),Charges_Category=High_Cost,0.145,0.9667,2.9073,0.0951,20.025
+Treatment=Surgery,Charges_Category=High_Cost,0.21,0.9655,2.9038,0.1377,19.3575
+LOS_Category=Short(1-3d) + Outcome=Recovered,Charges_Category=Low_Cost,0.1275,0.9623,2.8724,0.0831,17.6225
+Disease=Fracture + LOS_Category=Extended(15d+),Charges_Category=High_Cost,0.125,0.9615,2.8918,0.0818,17.355
+LOS_Category=Extended(15d+),Charges_Category=High_Cost,0.18,0.96,2.8872,0.1177,16.6875
+Diabetes=No + Treatment=Surgery,Charges_Category=High_Cost,0.1675,0.9571,2.8786,0.1093,15.575
+LOS_Category=Short(1-3d),Charges_Category=Low_Cost,0.1625,0.9559,2.8534,0.1056,15.0733
+Age_Group=36-50 + Gender=Female,Diabetes=No,0.1075,0.9556,1.2532,0.0217,5.3437
+Disease=Fracture + Treatment=Surgery,Charges_Category=High_Cost,0.155,0.9538,2.8687,0.101,14.4625
+Admission_Type=Urgent + BP_Category=Elevated + Outcome=Recovered,Diabetes=No,0.1025,0.9535,1.2505,0.0205,5.1062
+Diabetes=No + LOS_Category=Short(1-3d) + Outcome=Recovered,Charges_Category=Low_Cost,0.1,0.9524,2.8429,0.0648,13.965
+BP_Category=Elevated + Gender=Male + Outcome=Recovered,Diabetes=No,0.135,0.9474,1.2425,0.0263,4.5125
+Age_Group=36-50 + Outcome=Recovered,Diabetes=No,0.1675,0.9437,1.2376,0.0322,4.2156
+Diabetes=No + LOS_Category=Short(1-3d),Charges_Category=Low_Cost,0.125,0.9434,2.8161,0.0806,11.7483
+Diabetes=No + Disease=Fracture + Treatment=Surgery,Charges_Category=High_Cost,0.12,0.9412,2.8306,0.0776,11.3475
+BP_Category=Normal + Gender=Female,Diabetes=No,0.105,0.9333,1.224,0.0192,3.5625
+Outcome=Recovered + Treatment=Medication,Diabetes=No,0.11,0.9167,1.2022,0.0185,2.85
+Age_Group=36-50,Diabetes=No,0.2375,0.9135,1.198,0.0393,2.7444
+Admission_Type=Urgent + Outcome=Recovered,Diabetes=No,0.205,0.9111,1.1949,0.0334,2.6719
+BP_Category=Elevated + Outcome=Recovered,Diabetes=No,0.205,0.9111,1.1949,0.0334,2.6719
+LOS_Category=Long(8-14d) + Outcome=Recovered,Diabetes=No,0.1,0.9091,1.1923,0.0161,2.6125
+Admission_Type=Urgent + BP_Category=Normal,Diabetes=No,0.1,0.9091,1.1923,0.0161,2.6125
+Charges_Category=Medium_Cost + Outcome=Recovered,Diabetes=No,0.125,0.9091,1.1923,0.0202,2.6125
+Admission_Type=Urgent + Gender=Male + Outcome=Recovered,Diabetes=No,0.1075,0.8958,1.1749,0.016,2.28
+BP_Category=Elevated + LOS_Category=Medium(4-7d),Diabetes=No,0.12,0.8889,1.1658,0.0171,2.1375
+BP_Category=Normal + Outcome=Recovered,Diabetes=No,0.1375,0.8871,1.1634,0.0193,2.1036
+Age_Group=36-50 + Gender=Male,Diabetes=No,0.13,0.8814,1.1559,0.0175,2.0018
+BP_Category=Elevated + Gender=Male,Diabetes=No,0.2275,0.875,1.1475,0.0293,1.9
+Admission_Type=Urgent + BP_Category=Elevated + Gender=Male,Diabetes=No,0.1,0.8696,1.1404,0.0123,1.8208
+BP_Category=Normal,Diabetes=No,0.1975,0.8681,1.1385,0.024,1.801
+Charges_Category=Low_Cost + Gender=Male + Outcome=Recovered,Diabetes=No,0.115,0.8679,1.1383,0.014,1.7982
+Admission_Type=Urgent + BP_Category=Elevated,Diabetes=No,0.145,0.8657,1.1353,0.0173,1.7681
+Disease=Fracture + Gender=Female,Diabetes=No,0.11,0.8627,1.1315,0.0128,1.7304
+Admission_Type=Emergency + BP_Category=Elevated,Diabetes=No,0.125,0.8621,1.1306,0.0144,1.7219
+Gender=Male + Outcome=Recovered,Diabetes=No,0.2175,0.8614,1.1297,0.025,1.7134
+Admission_Type=Urgent + Gender=Female,Diabetes=No,0.1525,0.8592,1.1268,0.0172,1.6863
+Outcome=Recovered,Diabetes=No,0.395,0.8587,1.1262,0.0443,1.6808
+Disease=Pneumonia + Gender=Male,Diabetes=No,0.105,0.8571,1.1241,0.0116,1.6625
+Gender=Female + Outcome=Recovered,Diabetes=No,0.1775,0.8554,1.1219,0.0193,1.6427
+BP_Category=Elevated + Charges_Category=Low_Cost + Outcome=Recovered,Diabetes=No,0.1025,0.8542,1.1202,0.011,1.6286
+Admission_Type=Urgent + Charges_Category=Low_Cost + Outcome=Recovered,Diabetes=No,0.1025,0.8542,1.1202,0.011,1.6286
+LOS_Category=Medium(4-7d) + Outcome=Recovered,Diabetes=No,0.16,0.8533,1.1191,0.017,1.6193
+Admission_Type=Urgent + LOS_Category=Medium(4-7d),Diabetes=No,0.115,0.8519,1.1172,0.0121,1.6031
+BP_Category=Elevated + Charges_Category=Low_Cost,Diabetes=No,0.125,0.8475,1.1114,0.0125,1.5569
+BP_Category=Elevated + Charges_Category=Medium_Cost,Diabetes=No,0.11,0.8462,1.1097,0.0109,1.5438
+Charges_Category=Low_Cost + Gender=Male,Diabetes=No,0.1575,0.84,1.1016,0.0145,1.4844
+Charges_Category=Low_Cost + Disease=Infection,Outcome=Recovered,0.1175,0.8393,1.8245,0.0531,3.36
+BP_Category=Elevated,Diabetes=No,0.3475,0.8373,1.0982,0.0311,1.4602
+LOS_Category=Extended(15d+) + Treatment=Surgery,Charges_Category=High_Cost + Diabetes=No,0.1,0.8333,3.268,0.0694,4.47
+Age_Group=51-65 + Charges_Category=Low_Cost,Outcome=Recovered,0.1,0.8333,1.8116,0.0448,3.24
+LOS_Category=Extended(15d+) + Treatment=Surgery,Diabetes=No,0.1,0.8333,1.0929,0.0085,1.425
+Charges_Category=High_Cost + LOS_Category=Extended(15d+) + Treatment=Surgery,Diabetes=No,0.1,0.8333,1.0929,0.0085,1.425
+Charges_Category=Medium_Cost + Gender=Female,Diabetes=No,0.11,0.8302,1.0888,0.009,1.3986
+Age_Group=51-65 + Outcome=Recovered,Diabetes=No,0.145,0.8286,1.0867,0.0116,1.3854
+Age_Group=51-65 + BP_Category=Elevated,Diabetes=No,0.12,0.8276,1.0854,0.0094,1.3775
+Admission_Type=Urgent + Charges_Category=Low_Cost,Diabetes=No,0.13,0.8254,1.0825,0.0099,1.3602
+BP_Category=Elevated + Charges_Category=Low_Cost + Diabetes=No,Outcome=Recovered,0.1025,0.82,1.7826,0.045,3.0
+BP_Category=Elevated + Charges_Category=High_Cost,Diabetes=No,0.1125,0.8182,1.073,0.0077,1.3062
+Diabetes=No + Disease=Infection,Outcome=Recovered,0.1225,0.8167,1.7754,0.0535,2.9455
+Gender=Female + Outcome=Stable,Diabetes=No,0.1,0.8163,1.0706,0.0066,1.2931
+BP_Category=Elevated + Charges_Category=Low_Cost,Outcome=Recovered,0.12,0.8136,1.7686,0.0522,2.8964
+Admission_Type=Urgent,Diabetes=No,0.3275,0.8086,1.0605,0.0187,1.2411
+Charges_Category=Low_Cost + Outcome=Recovered,Diabetes=No,0.1975,0.8061,1.0572,0.0107,1.225
+Charges_Category=High_Cost + LOS_Category=Extended(15d+),Diabetes=No,0.145,0.8056,1.0565,0.0078,1.2214
+Disease=Pneumonia,Diabetes=No,0.145,0.8056,1.0565,0.0078,1.2214
+Treatment=Surgery,Diabetes=No,0.175,0.8046,1.0552,0.0092,1.2154
+Charges_Category=Low_Cost + LOS_Category=Medium(4-7d),Diabetes=No,0.1325,0.803,1.0532,0.0067,1.2058
+Charges_Category=Low_Cost + Diabetes=No + LOS_Category=Short(1-3d),Outcome=Recovered,0.1,0.8,1.7391,0.0425,2.7
+Admission_Type=Elective + Charges_Category=Low_Cost,Outcome=Recovered,0.1,0.8,1.7391,0.0425,2.7
+LOS_Category=Extended(15d+),Diabetes=No,0.15,0.8,1.0492,0.007,1.1875
+Treatment=Medication,Diabetes=No,0.18,0.8,1.0492,0.0084,1.1875
+Charges_Category=High_Cost + Treatment=Surgery,Diabetes=No,0.1675,0.7976,1.0461,0.0074,1.1735
+Admission_Type=Urgent + Disease=Fracture,Diabetes=No,0.1175,0.7966,1.0447,0.005,1.1677
+LOS_Category=Short(1-3d) + Outcome=Recovered,Diabetes=No,0.105,0.7925,1.0393,0.004,1.1443
+Diabetes=No + LOS_Category=Short(1-3d),Outcome=Recovered,0.105,0.7925,1.7227,0.044,2.6018
+Charges_Category=Low_Cost,Diabetes=No,0.265,0.791,1.0374,0.0096,1.1366
+Disease=Infection + Outcome=Recovered,Diabetes=No,0.1225,0.7903,1.0365,0.0043,1.1327
+Admission_Type=Urgent + Charges_Category=Low_Cost + Diabetes=No,Outcome=Recovered,0.1025,0.7885,1.714,0.0427,2.5527
+Admission_Type=Emergency + Outcome=Stable,Diabetes=No,0.1025,0.7885,1.034,0.0034,1.1227
+Charges_Category=Low_Cost + LOS_Category=Short(1-3d),Outcome=Recovered,0.1275,0.7846,1.7057,0.0527,2.5071
+Disease=Fracture + Treatment=Surgery,Diabetes=No,0.1275,0.7846,1.029,0.0036,1.1027
+Charges_Category=Low_Cost + LOS_Category=Short(1-3d) + Outcome=Recovered,Diabetes=No,0.1,0.7843,1.0286,0.0028,1.1011
+Admission_Type=Urgent + Charges_Category=Medium_Cost,Diabetes=No,0.1,0.7843,1.0286,0.0028,1.1011
+LOS_Category=Short(1-3d),Diabetes=No,0.1325,0.7794,1.0222,0.0029,1.0767
+LOS_Category=Short(1-3d),Outcome=Recovered,0.1325,0.7794,1.6944,0.0543,2.448
+Charges_Category=High_Cost + Gender=Male,Diabetes=No,0.14,0.7778,1.02,0.0028,1.0688
+BP_Category=Elevated + Gender=Female,Diabetes=No,0.12,0.7742,1.0153,0.0018,1.0518
+Charges_Category=High_Cost + Disease=Fracture + Treatment=Surgery,Diabetes=No,0.12,0.7742,1.0153,0.0018,1.0518
+Disease=Fracture + LOS_Category=Long(8-14d),Diabetes=No,0.1025,0.7736,1.0145,0.0015,1.049
+Gender=Male + LOS_Category=Medium(4-7d),Diabetes=No,0.145,0.7733,1.0142,0.002,1.0478
+LOS_Category=Extended(15d+),Charges_Category=High_Cost + Diabetes=No,0.145,0.7733,3.0327,0.0972,3.2868
+Treatment=Antibiotics,Diabetes=No,0.11,0.7719,1.0124,0.0013,1.0413
+Disease=Cardiac,Diabetes=No,0.1175,0.7705,1.0105,0.0012,1.0348
+Treatment=Surgery,Charges_Category=High_Cost + Diabetes=No,0.1675,0.7701,3.0201,0.112,3.2408
+BP_Category=Elevated + LOS_Category=Long(8-14d),Diabetes=No,0.1,0.7692,1.0088,0.0009,1.0292
+Admission_Type=Urgent + Gender=Male,Diabetes=No,0.175,0.7692,1.0088,0.0015,1.0292
+Charges_Category=Low_Cost + LOS_Category=Short(1-3d),Diabetes=No,0.125,0.7692,1.0088,0.0011,1.0292
+Gender=Female,Diabetes=No,0.3325,0.7688,1.0082,0.0027,1.0272
+Disease=Fracture,Diabetes=No,0.2325,0.7686,1.008,0.0018,1.0263
+Charges_Category=High_Cost,Diabetes=No,0.255,0.7669,1.0058,0.0015,1.019
+Disease=Infection,Outcome=Recovered,0.155,0.7654,1.664,0.0618,2.3021
+LOS_Category=Medium(4-7d),Diabetes=No,0.2525,0.7652,1.0035,0.0009,1.0113
+Charges_Category=Low_Cost + Gender=Female,Outcome=Recovered,0.1125,0.7627,1.6581,0.0447,2.2757
+Admission_Type=Emergency + Gender=Male,Diabetes=No,0.16,0.7619,0.9992,-0.0001,0.9975
+Admission_Type=Urgent + Charges_Category=Low_Cost,Outcome=Recovered,0.12,0.7619,1.6563,0.0475,2.268
+Charges_Category=High_Cost + Diabetes=No + Disease=Fracture,Treatment=Surgery,0.12,0.7619,3.503,0.0857,3.2865
+Age_Group=51-65 + Gender=Female,Diabetes=No,0.1025,0.7593,0.9957,-0.0004,0.9865
+Charges_Category=High_Cost + Disease=Fracture,Diabetes=No,0.1575,0.759,0.9955,-0.0007,0.9856
+Disease=Infection + Outcome=Recovered,Charges_Category=Low_Cost,0.1175,0.7581,2.2629,0.0656,2.7487
+Gender=Male,Diabetes=No,0.43,0.7577,0.9937,-0.0027,0.9802
+LOS_Category=Short(1-3d) + Outcome=Recovered,Charges_Category=Low_Cost + Diabetes=No,0.1,0.7547,2.848,0.0649,2.9965
+Diabetes=No + LOS_Category=Short(1-3d),Charges_Category=Low_Cost + Outcome=Recovered,0.1,0.7547,3.0805,0.0675,3.0781
+Admission_Type=Urgent + Age_Group=51-65,Diabetes=No,0.1075,0.7544,0.9894,-0.0012,0.967
+Gender=Female + LOS_Category=Medium(4-7d),Diabetes=No,0.1075,0.7544,0.9894,-0.0012,0.967
+Charges_Category=High_Cost + Gender=Female,Diabetes=No,0.115,0.7541,0.989,-0.0013,0.9658
+LOS_Category=Short(1-3d),Charges_Category=Low_Cost + Outcome=Recovered,0.1275,0.75,3.0612,0.0859,3.02
+Charges_Category=Low_Cost + Disease=Infection,Diabetes=No,0.105,0.75,0.9836,-0.0018,0.95
+Treatment=Surgery,Disease=Fracture,0.1625,0.7471,2.4698,0.0967,2.7583
+Charges_Category=High_Cost + Disease=Fracture,Treatment=Surgery,0.155,0.747,3.4344,0.1099,3.0927
+Charges_Category=Low_Cost + Diabetes=No,Outcome=Recovered,0.1975,0.7453,1.6202,0.0756,2.12
+Admission_Type=Emergency,Diabetes=No,0.2625,0.7447,0.9766,-0.0063,0.9302
+Outcome=Stable,Diabetes=No,0.2375,0.7422,0.9734,-0.0065,0.9212
+Disease=Infection,Diabetes=No,0.15,0.7407,0.9715,-0.0044,0.9161
+Age_Group=51-65,Diabetes=No,0.2475,0.7388,0.9689,-0.0079,0.9093
+Admission_Type=Elective + Outcome=Recovered,Diabetes=No,0.12,0.7385,0.9685,-0.0039,0.9081
+Disease=Fracture + Treatment=Surgery,Charges_Category=High_Cost + Diabetes=No,0.12,0.7385,2.8959,0.0786,2.8485
+Charges_Category=Medium_Cost + LOS_Category=Medium(4-7d),Diabetes=No,0.12,0.7385,0.9685,-0.0039,0.9081
+Charges_Category=High_Cost + Treatment=Surgery,Disease=Fracture,0.155,0.7381,2.44,0.0915,2.6632
+Admission_Type=Emergency + Charges_Category=High_Cost,Diabetes=No,0.1125,0.7377,0.9675,-0.0038,0.9055
+LOS_Category=Short(1-3d),Charges_Category=Low_Cost + Diabetes=No,0.125,0.7353,2.7747,0.0799,2.7767
+Charges_Category=High_Cost + LOS_Category=Long(8-14d),Diabetes=No,0.11,0.7333,0.9617,-0.0044,0.8906
+Charges_Category=Low_Cost,Outcome=Recovered,0.245,0.7313,1.5899,0.0909,2.01
+Charges_Category=Low_Cost + Diabetes=No + Gender=Male,Outcome=Recovered,0.115,0.7302,1.5873,0.0426,2.0012
+Charges_Category=Medium_Cost,Diabetes=No,0.2425,0.7293,0.9565,-0.011,0.8774
+Charges_Category=Low_Cost + Gender=Female,Diabetes=No,0.1075,0.7288,0.9558,-0.005,0.8758
+Diabetes=No + Treatment=Surgery,Disease=Fracture,0.1275,0.7286,2.4085,0.0746,2.5697
+LOS_Category=Long(8-14d),Diabetes=No,0.2275,0.728,0.9548,-0.0108,0.8732
+Admission_Type=Urgent + Outcome=Stable,Diabetes=No,0.1,0.7273,0.9538,-0.0048,0.8708
+Age_Group=51-65 + Gender=Male,Diabetes=No,0.145,0.725,0.9508,-0.0075,0.8636
+Diabetes=No + Disease=Pneumonia,Gender=Male,0.105,0.7241,1.276,0.0227,1.5678
+Gender=Male + LOS_Category=Long(8-14d),Diabetes=No,0.1375,0.7237,0.9491,-0.0074,0.8595
+Disease=Diabetes,Diabetes=No,0.1175,0.7231,0.9483,-0.0064,0.8576
+Admission_Type=Emergency + Gender=Female,Diabetes=No,0.1025,0.7193,0.9433,-0.0062,0.8461
+Charges_Category=High_Cost + Diabetes=No + Treatment=Surgery,Disease=Fracture,0.12,0.7164,2.3683,0.0693,2.4596
+Admission_Type=Urgent + Age_Group=65+,Diabetes=No,0.1,0.7143,0.9368,-0.0067,0.8313
+Admission_Type=Emergency + Charges_Category=Medium_Cost,Diabetes=No,0.105,0.7119,0.9336,-0.0075,0.8243
+Admission_Type=Elective,Diabetes=No,0.1725,0.7113,0.9329,-0.0124,0.8228
+Charges_Category=Medium_Cost + LOS_Category=Long(8-14d),Diabetes=No,0.11,0.7097,0.9307,-0.0082,0.8181
+Disease=Diabetes,Outcome=Recovered,0.115,0.7077,1.5385,0.0402,1.8474
+Age_Group=51-65 + BP_Category=Elevated,Gender=Male,0.1025,0.7069,1.2456,0.0202,1.4756
+Admission_Type=Urgent + BP_Category=Elevated + Diabetes=No,Outcome=Recovered,0.1025,0.7069,1.5367,0.0358,1.8424
+Charges_Category=Low_Cost + Gender=Male,Outcome=Recovered,0.1325,0.7067,1.5362,0.0462,1.8409
+Age_Group=36-50 + Diabetes=No,Outcome=Recovered,0.1675,0.7053,1.5332,0.0583,1.8321
+Treatment=Monitoring,Diabetes=No,0.165,0.7021,0.9208,-0.0142,0.7973
+Disease=Fracture + Gender=Male,Diabetes=No,0.1225,0.7,0.918,-0.0109,0.7917
+Age_Group=65+ + Outcome=Stable,Diabetes=No,0.105,0.7,0.918,-0.0094,0.7917
+Diabetes=No + Disease=Infection,Charges_Category=Low_Cost,0.105,0.7,2.0896,0.0547,2.2167
+Gender=Male + Outcome=Stable,Diabetes=No,0.1375,0.6962,0.9131,-0.0131,0.7818
+BP_Category=Normal + Diabetes=No,Outcome=Recovered,0.1375,0.6962,1.5135,0.0466,1.7775
+Admission_Type=Elective + Diabetes=No,Outcome=Recovered,0.12,0.6957,1.5123,0.0406,1.7743
+BP_Category=Elevated + Charges_Category=Low_Cost,Diabetes=No + Outcome=Recovered,0.1025,0.6949,1.7593,0.0442,1.9831
+Charges_Category=High_Cost + LOS_Category=Extended(15d+),Disease=Fracture,0.125,0.6944,2.2957,0.0706,2.2827
+LOS_Category=Extended(15d+),Disease=Fracture,0.13,0.6933,2.292,0.0733,2.2745
+Disease=Infection,Charges_Category=Low_Cost,0.14,0.6914,2.0638,0.0722,2.1546
+Admission_Type=Urgent + BP_Category=Elevated + Diabetes=No,Gender=Male,0.1,0.6897,1.2153,0.0177,1.3936
+Charges_Category=High_Cost + Diabetes=No + LOS_Category=Extended(15d+),Treatment=Surgery,0.1,0.6897,3.1708,0.0685,2.5214
+Admission_Type=Urgent + BP_Category=Elevated,Gender=Male,0.115,0.6866,1.2098,0.0199,1.3799
+Disease=Fracture,Charges_Category=High_Cost,0.2075,0.686,2.063,0.1069,2.1255
+Diabetes=No + Treatment=Surgery,Charges_Category=High_Cost + Disease=Fracture,0.12,0.6857,3.3046,0.0837,2.5216
+Disease=Fracture + Gender=Male,Charges_Category=High_Cost,0.12,0.6857,2.0623,0.0618,2.1239
+Age_Group=36-50,Outcome=Recovered,0.1775,0.6827,1.4841,0.0579,1.7018
+Outcome=Deceased,Admission_Type=Emergency,0.15,0.6818,1.9342,0.0724,2.035
+Charges_Category=Low_Cost + LOS_Category=Medium(4-7d),Outcome=Recovered,0.1125,0.6818,1.4822,0.0366,1.6971
+BP_Category=Normal,Outcome=Recovered,0.155,0.6813,1.4811,0.0503,1.6945
+Disease=Pneumonia,Gender=Male,0.1225,0.6806,1.1992,0.0204,1.3539
+Diabetes=No + Disease=Fracture,Charges_Category=High_Cost,0.1575,0.6774,2.0374,0.0802,2.0692
+Admission_Type=Elective,Outcome=Recovered,0.1625,0.6701,1.4567,0.051,1.6369
+Diabetes=No + LOS_Category=Extended(15d+),Charges_Category=High_Cost + Treatment=Surgery,0.1,0.6667,3.1746,0.0685,2.37
+Diabetes=No + LOS_Category=Extended(15d+),Treatment=Surgery,0.1,0.6667,3.0651,0.0674,2.3475
+Age_Group=65+ + Gender=Male,Diabetes=No,0.115,0.6667,0.8743,-0.0165,0.7125
+LOS_Category=Extended(15d+),Charges_Category=High_Cost + Disease=Fracture,0.125,0.6667,3.2129,0.0861,2.3775
+Charges_Category=High_Cost + LOS_Category=Extended(15d+),Treatment=Surgery,0.12,0.6667,3.0651,0.0808,2.3475
+Charges_Category=High_Cost + Gender=Male,Disease=Fracture,0.12,0.6667,2.2039,0.0656,2.0925
+Charges_Category=Medium_Cost + Gender=Male,Diabetes=No,0.1325,0.6625,0.8689,-0.02,0.7037
+Charges_Category=Medium_Cost + LOS_Category=Long(8-14d),Gender=Male,0.1025,0.6613,1.1653,0.0145,1.2769
+Age_Group=65+,Diabetes=No,0.2125,0.6589,0.8642,-0.0334,0.6963
+BP_Category=Elevated + Diabetes=No + Outcome=Recovered,Gender=Male,0.135,0.6585,1.1604,0.0187,1.2666
+Disease=Cardiac,Charges_Category=High_Cost,0.1,0.6557,1.9721,0.0493,1.9389
+BP_Category=Elevated + Diabetes=No,Gender=Male,0.2275,0.6547,1.1536,0.0303,1.2524
+Admission_Type=Urgent + Charges_Category=Low_Cost,Diabetes=No + Outcome=Recovered,0.1025,0.6508,1.6476,0.0403,1.7325
+BP_Category=High + Gender=Female,Diabetes=No,0.105,0.6462,0.8474,-0.0189,0.6712
+Age_Group=36-50,Diabetes=No + Outcome=Recovered,0.1675,0.6442,1.631,0.0648,1.7005
+Admission_Type=Urgent + BP_Category=Elevated,Outcome=Recovered,0.1075,0.6418,1.3952,0.0304,1.5075
+LOS_Category=Extended(15d+),Charges_Category=High_Cost + Treatment=Surgery,0.12,0.64,3.0476,0.0806,2.1944
+LOS_Category=Extended(15d+),Treatment=Surgery,0.12,0.64,2.9425,0.0792,2.1736
+Diabetes=No + LOS_Category=Medium(4-7d),Outcome=Recovered,0.16,0.6337,1.3775,0.0438,1.4741
+BP_Category=Elevated + Outcome=Recovered,Gender=Male,0.1425,0.6333,1.116,0.0148,1.1795
+BP_Category=Elevated,Gender=Male,0.26,0.6265,1.104,0.0245,1.158
+Admission_Type=Urgent + Diabetes=No,Outcome=Recovered,0.205,0.626,1.3608,0.0543,1.4437
+Charges_Category=High_Cost + Gender=Male,Treatment=Surgery,0.1125,0.625,2.8736,0.0734,2.0867
+Outcome=Deceased,Age_Group=65+,0.1375,0.625,1.938,0.0666,1.8067
+Diabetes=No + Gender=Male + Outcome=Recovered,BP_Category=Elevated,0.135,0.6207,1.4956,0.0447,1.5423
+Charges_Category=High_Cost + Diabetes=No,Disease=Fracture,0.1575,0.6176,2.0418,0.0804,1.8242
+LOS_Category=Short(1-3d),Diabetes=No + Outcome=Recovered,0.105,0.6176,1.5637,0.0378,1.5823
+Disease=Infection,Gender=Male,0.125,0.6173,1.0877,0.0101,1.1301
+Outcome=Stable,Gender=Male,0.1975,0.6172,1.0876,0.0159,1.1298
+Charges_Category=Low_Cost + LOS_Category=Short(1-3d),Diabetes=No + Outcome=Recovered,0.1,0.6154,1.5579,0.0358,1.573
+Disease=Diabetes,Charges_Category=Low_Cost,0.1,0.6154,1.837,0.0456,1.729
+Admission_Type=Elective + Outcome=Recovered,Charges_Category=Low_Cost,0.1,0.6154,1.837,0.0456,1.729
+Admission_Type=Urgent + Diabetes=No + Gender=Male,Outcome=Recovered,0.1075,0.6143,1.3354,0.027,1.4
+Outcome=Deceased,BP_Category=High,0.135,0.6136,1.7532,0.058,1.6824
+Outcome=Deceased,Charges_Category=High_Cost,0.135,0.6136,1.8455,0.0618,1.7276
+Charges_Category=Low_Cost + Gender=Male,Diabetes=No + Outcome=Recovered,0.115,0.6133,1.5527,0.0409,1.5647
+Admission_Type=Urgent + BP_Category=Elevated,Diabetes=No + Outcome=Recovered,0.1025,0.6119,1.5492,0.0363,1.559
+Diabetes=No + Treatment=Medication,Outcome=Recovered,0.11,0.6111,1.3285,0.0272,1.3886
+Admission_Type=Emergency + Diabetes=No,Gender=Male,0.16,0.6095,1.0741,0.011,1.1076
+LOS_Category=Long(8-14d),Gender=Male,0.19,0.608,1.0714,0.0127,1.1033
+Disease=Infection,Diabetes=No + Outcome=Recovered,0.1225,0.6049,1.5315,0.0425,1.5314
+BP_Category=Normal,Diabetes=No + Outcome=Recovered,0.1375,0.6044,1.5301,0.0476,1.5293
+Diabetes=No + LOS_Category=Long(8-14d),Gender=Male,0.1375,0.6044,1.065,0.0084,1.0933
+Charges_Category=Medium_Cost,Gender=Male,0.2,0.6015,1.0599,0.0113,1.0853
+BP_Category=Elevated + Outcome=Recovered,Diabetes=No + Gender=Male,0.135,0.6,1.3953,0.0383,1.425
+LOS_Category=Medium(4-7d) + Outcome=Recovered,Charges_Category=Low_Cost,0.1125,0.6,1.791,0.0497,1.6625
+BP_Category=High,Diabetes=No,0.21,0.6,0.7869,-0.0569,0.5938
+Age_Group=51-65,Gender=Male,0.2,0.597,1.052,0.0099,1.0732
+Charges_Category=High_Cost + Diabetes=No + Treatment=Surgery,LOS_Category=Extended(15d+),0.1,0.597,3.1841,0.0686,2.0162
+Admission_Type=Urgent + BP_Category=Elevated,Diabetes=No + Gender=Male,0.1,0.597,1.3884,0.028,1.4144
+Admission_Type=Emergency,Gender=Male,0.21,0.5957,1.0498,0.01,1.0699
+Charges_Category=Low_Cost + Diabetes=No,Gender=Male,0.1575,0.5943,1.0473,0.0071,1.0662
+BP_Category=Elevated + Diabetes=No + Gender=Male,Outcome=Recovered,0.135,0.5934,1.29,0.0304,1.3281
+Admission_Type=Urgent + Gender=Female,Outcome=Recovered,0.105,0.5915,1.286,0.0233,1.3221
+Outcome=Deceased,Diabetes=No,0.13,0.5909,0.775,-0.0377,0.5806
+BP_Category=Elevated + Diabetes=No,Outcome=Recovered,0.205,0.5899,1.2825,0.0451,1.3168
+Charges_Category=Low_Cost,Diabetes=No + Outcome=Recovered,0.1975,0.5896,1.4925,0.0652,1.474
+Diabetes=Yes,BP_Category=High,0.14,0.5895,1.6842,0.0569,1.5833
+Age_Group=65+ + BP_Category=High,Diabetes=No,0.1,0.5882,0.7715,-0.0296,0.5768
+LOS_Category=Short(1-3d),Charges_Category=Low_Cost + Diabetes=No + Outcome=Recovered,0.1,0.5882,2.9784,0.0664,1.9489
+Treatment=Surgery,Diabetes=No + Disease=Fracture,0.1275,0.5862,2.5213,0.0769,1.8548
+Age_Group=51-65 + Diabetes=No,Gender=Male,0.145,0.5859,1.0323,0.0045,1.0443
+Age_Group=51-65 + Diabetes=No,Outcome=Recovered,0.145,0.5859,1.2736,0.0311,1.3039
+Disease=Pneumonia,Diabetes=No + Gender=Male,0.105,0.5833,1.3566,0.0276,1.368
+Charges_Category=Low_Cost + Diabetes=No + Outcome=Recovered,Gender=Male,0.115,0.5823,1.026,0.0029,1.0354
+Disease=Infection,Charges_Category=Low_Cost + Outcome=Recovered,0.1175,0.5802,2.3684,0.0679,1.7987
+Diabetes=No + Outcome=Stable,Gender=Male,0.1375,0.5789,1.0202,0.0027,1.0272
+Diabetes=Yes,Gender=Male,0.1375,0.5789,1.0202,0.0027,1.0272
+Disease=Fracture,Gender=Male,0.175,0.5785,1.0194,0.0033,1.0261
+Charges_Category=High_Cost + Disease=Fracture,Gender=Male,0.12,0.5783,1.0191,0.0022,1.0256
+Treatment=Monitoring,Gender=Male,0.135,0.5745,1.0123,0.0016,1.0164
+Diabetes=No + LOS_Category=Medium(4-7d),Gender=Male,0.145,0.5743,1.0119,0.0017,1.0159
+Age_Group=51-65 + Outcome=Recovered,Charges_Category=Low_Cost,0.1,0.5714,1.7058,0.0414,1.5517
+Age_Group=51-65 + Outcome=Recovered,Gender=Male,0.1,0.5714,1.0069,0.0007,1.0092
+Diabetes=No + Treatment=Surgery,LOS_Category=Extended(15d+),0.1,0.5714,3.0476,0.0672,1.8958
+Admission_Type=Urgent + Diabetes=No + Gender=Male,BP_Category=Elevated,0.1,0.5714,1.3769,0.0274,1.365
+Diabetes=No + Treatment=Surgery,Charges_Category=High_Cost + LOS_Category=Extended(15d+),0.1,0.5714,3.1746,0.0685,1.9133
+Charges_Category=High_Cost + Treatment=Surgery,Diabetes=No + Disease=Fracture,0.12,0.5714,2.4578,0.0712,1.7908
+Disease=Pneumonia,Admission_Type=Emergency,0.1025,0.5694,1.6154,0.039,1.5039
+LOS_Category=Medium(4-7d),Gender=Male,0.1875,0.5682,1.0012,0.0002,1.0016
+LOS_Category=Medium(4-7d),Outcome=Recovered,0.1875,0.5682,1.2352,0.0357,1.2505
+Age_Group=36-50,Gender=Male,0.1475,0.5673,0.9997,-0.0001,0.9996
+Gender=Male + Outcome=Recovered,BP_Category=Elevated,0.1425,0.5644,1.3599,0.0377,1.3428
+Admission_Type=Urgent,Gender=Male,0.2275,0.5617,0.9898,-0.0023,0.9868
+LOS_Category=Extended(15d+),Gender=Male,0.105,0.56,0.9868,-0.0014,0.983
+Gender=Male + LOS_Category=Medium(4-7d),Outcome=Recovered,0.105,0.56,1.2174,0.0187,1.2273
+LOS_Category=Medium(4-7d) + Outcome=Recovered,Gender=Male,0.105,0.56,0.9868,-0.0014,0.983
+BP_Category=High + Gender=Male,Diabetes=No,0.105,0.56,0.7344,-0.038,0.5398
+Charges_Category=Low_Cost,Gender=Male,0.1875,0.5597,0.9863,-0.0026,0.9823
+Treatment=Medication,Gender=Male,0.125,0.5556,0.979,-0.0027,0.9731
+Disease=Pneumonia,LOS_Category=Medium(4-7d),0.1,0.5556,1.6835,0.0406,1.5075
+Admission_Type=Urgent,Outcome=Recovered,0.225,0.5556,1.2077,0.0387,1.215
+Diabetes=No + Outcome=Recovered,Gender=Male,0.2175,0.5506,0.9703,-0.0067,0.9625
+Charges_Category=High_Cost + Diabetes=No,Gender=Male,0.14,0.549,0.9674,-0.0047,0.959
+Outcome=Recovered,Gender=Male,0.2525,0.5489,0.9672,-0.0086,0.9588
+BP_Category=Elevated,Diabetes=No + Gender=Male,0.2275,0.5482,1.2749,0.0491,1.2616
+BP_Category=Elevated + Gender=Male,Outcome=Recovered,0.1425,0.5481,1.1915,0.0229,1.1949
+Age_Group=36-50 + Diabetes=No,Gender=Male,0.13,0.5474,0.9645,-0.0048,0.9555
+Charges_Category=Medium_Cost + Diabetes=No,Gender=Male,0.1325,0.5464,0.9628,-0.0051,0.9535
+BP_Category=Elevated,Outcome=Recovered,0.225,0.5422,1.1786,0.0341,1.1795
+Gender=Female + Outcome=Recovered,Charges_Category=Low_Cost,0.1125,0.5422,1.6184,0.043,1.4525
+Charges_Category=High_Cost,Gender=Male,0.18,0.5414,0.9539,-0.0087,0.943
+Age_Group=65+ + Diabetes=No,Gender=Male,0.115,0.5412,0.9536,-0.0056,0.9426
+Charges_Category=Low_Cost + Outcome=Recovered,Gender=Male,0.1325,0.5408,0.953,-0.0065,0.9419
+Gender=Male + LOS_Category=Long(8-14d),Charges_Category=Medium_Cost,0.1025,0.5395,1.6225,0.0393,1.4494
+Admission_Type=Elective,Gender=Male,0.13,0.5361,0.9446,-0.0076,0.9323
+BP_Category=High,Gender=Male,0.1875,0.5357,0.944,-0.0111,0.9315
+Charges_Category=High_Cost + Treatment=Surgery,Gender=Male,0.1125,0.5357,0.944,-0.0067,0.9315
+Age_Group=65+,Gender=Male,0.1725,0.5349,0.9425,-0.0105,0.9299
+Gender=Male + Outcome=Recovered,BP_Category=Elevated + Diabetes=No,0.135,0.5347,1.5386,0.0473,1.4022
+Admission_Type=Urgent + Diabetes=No,Gender=Male,0.175,0.5344,0.9416,-0.0109,0.9288
+Outcome=Deceased,Gender=Male,0.1175,0.5341,0.9411,-0.0074,0.9283
+Diabetes=No + Gender=Female,Outcome=Recovered,0.1775,0.5338,1.1605,0.0245,1.1584
+Admission_Type=Urgent + Outcome=Recovered,Charges_Category=Low_Cost,0.12,0.5333,1.592,0.0446,1.425
+Admission_Type=Urgent + Outcome=Recovered,Gender=Male,0.12,0.5333,0.9398,-0.0077,0.9268
+LOS_Category=Extended(15d+),Outcome=Deceased,0.1,0.5333,2.4242,0.0588,1.6714
+Treatment=Medication,Outcome=Recovered,0.12,0.5333,1.1594,0.0165,1.1571
+BP_Category=Elevated + Outcome=Recovered,Charges_Category=Low_Cost,0.12,0.5333,1.592,0.0446,1.425
+BP_Category=Normal + Diabetes=No,Gender=Female,0.105,0.5316,1.2292,0.0196,1.2117
+Disease=Infection,LOS_Category=Medium(4-7d),0.1075,0.5309,1.6087,0.0407,1.4282
+Diabetes=No + Gender=Male + Outcome=Recovered,Charges_Category=Low_Cost,0.115,0.5287,1.5783,0.0421,1.4111
+Treatment=Surgery,Gender=Male,0.115,0.5287,0.9317,-0.0084,0.9177
+Admission_Type=Urgent + Gender=Male,Outcome=Recovered,0.12,0.5275,1.1467,0.0153,1.1428
+Age_Group=65+,BP_Category=High,0.17,0.5271,1.5061,0.0571,1.3746
+Diabetes=No + Disease=Fracture,Gender=Male,0.1225,0.5269,0.9284,-0.0094,0.9141
+Gender=Male + Outcome=Recovered,Charges_Category=Low_Cost,0.1325,0.5248,1.5664,0.0479,1.3993
+Diabetes=No + LOS_Category=Medium(4-7d),Charges_Category=Low_Cost,0.1325,0.5248,1.5664,0.0479,1.3993
+Admission_Type=Urgent + Diabetes=No + Outcome=Recovered,Gender=Male,0.1075,0.5244,0.924,-0.0088,0.9094
+Age_Group=51-65,Outcome=Recovered,0.175,0.5224,1.1356,0.0209,1.1306
+BP_Category=Elevated + Gender=Male,Diabetes=No + Outcome=Recovered,0.135,0.5192,1.3145,0.0323,1.2584
+Charges_Category=Low_Cost + Diabetes=No + Outcome=Recovered,Admission_Type=Urgent,0.1025,0.519,1.2815,0.0225,1.237
+Diabetes=No + Outcome=Recovered,Admission_Type=Urgent,0.205,0.519,1.2815,0.045,1.237
+Diabetes=No + Outcome=Recovered,BP_Category=Elevated,0.205,0.519,1.2506,0.0411,1.2162
+Charges_Category=Low_Cost + Diabetes=No + Outcome=Recovered,BP_Category=Elevated,0.1025,0.519,1.2506,0.0205,1.2162
+Disease=Infection,Charges_Category=Low_Cost + Diabetes=No,0.105,0.5185,1.9567,0.0513,1.5265
+Admission_Type=Elective,Charges_Category=Low_Cost,0.125,0.5155,1.5387,0.0438,1.3724
+Charges_Category=Medium_Cost + Diabetes=No,Outcome=Recovered,0.125,0.5155,1.1206,0.0135,1.1145
+Age_Group=51-65 + Gender=Male,BP_Category=Elevated,0.1025,0.5125,1.2349,0.0195,1.2
+Charges_Category=Medium_Cost + Gender=Male,LOS_Category=Long(8-14d),0.1025,0.5125,1.64,0.04,1.4103
+BP_Category=Normal + Diabetes=No,Admission_Type=Urgent,0.1,0.5063,1.2502,0.02,1.2053
+Gender=Female + Outcome=Recovered,Admission_Type=Urgent,0.105,0.506,1.2494,0.021,1.2045
+Diabetes=No + Gender=Male,Outcome=Recovered,0.2175,0.5058,1.0996,0.0197,1.0927
+Admission_Type=Urgent + Gender=Male,BP_Category=Elevated,0.115,0.5055,1.2181,0.0206,1.183
+BP_Category=Normal,Gender=Male,0.115,0.5055,0.8907,-0.0141,0.8746
+Diabetes=No + Disease=Fracture,Admission_Type=Urgent,0.1175,0.5054,1.2478,0.0233,1.2029
+BP_Category=High + Diabetes=No,Gender=Female,0.105,0.5,1.1561,0.0142,1.135
+BP_Category=High + Diabetes=No,Gender=Male,0.105,0.5,0.8811,-0.0142,0.865
+Admission_Type=Urgent + Diabetes=No + Outcome=Recovered,Charges_Category=Low_Cost,0.1025,0.5,1.4925,0.0338,1.33
+LOS_Category=Medium(4-7d),Charges_Category=Low_Cost,0.165,0.5,1.4925,0.0544,1.33
+BP_Category=Elevated + Diabetes=No + Outcome=Recovered,Charges_Category=Low_Cost,0.1025,0.5,1.4925,0.0338,1.33
+Admission_Type=Urgent + Diabetes=No + Outcome=Recovered,BP_Category=Elevated,0.1025,0.5,1.2048,0.0174,1.17
+Treatment=Medication,Charges_Category=Medium_Cost,0.1125,0.5,1.5038,0.0377,1.335
+Age_Group=36-50,Diabetes=No + Gender=Male,0.13,0.5,1.1628,0.0182,1.14
+Charges_Category=Low_Cost + Diabetes=No,LOS_Category=Medium(4-7d),0.1325,0.5,1.5152,0.045,1.34
+BP_Category=Elevated + Diabetes=No + Outcome=Recovered,Admission_Type=Urgent,0.1025,0.5,1.2346,0.0195,1.19
+Age_Group=51-65 + Gender=Male,Outcome=Recovered,0.1,0.5,1.087,0.008,1.08

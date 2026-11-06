@@ -1,0 +1,42 @@
+K-MEANS CLUSTERING RESULTS
+k = 3
+Features: ['Age', 'Blood_Pressure', 'Length_of_Stay', 'Hospital_Charges'] (standardised)
+
+k selection table:
+  k      Inertia   Silhouette
+  2       1056.6       0.3462
+  3        790.7       0.2901
+  4        683.0       0.2799
+  5        596.7       0.2573
+  6        531.7       0.2549
+  7        485.0       0.2433
+  8        443.9       0.2484
+
+Cluster profiles (original units):
+          Age  Blood_Pressure  Length_of_Stay  Hospital_Charges  Patients
+Cluster                                                                  
+0        46.6           124.4             5.4           26471.2       147
+1        57.2           129.8            17.8          100754.5       102
+2        70.5           145.9             7.1           35809.3       151
+
+
+Disease distribution (% within cluster):
+Disease  Cardiac  Diabetes  Fracture  Infection  Pneumonia
+Cluster                                                   
+0            8.2      23.1      12.9       33.3       22.4
+1           28.4       1.0      66.7        0.0        3.9
+2           13.2      19.9      22.5       21.2       23.2
+
+Admission_Type distribution (% within cluster):
+Admission_Type  Elective  Emergency  Urgent
+Cluster                                    
+0                   31.3       25.2    43.5
+1                   16.7       46.1    37.3
+2                   22.5       37.7    39.7
+
+Outcome distribution (% within cluster):
+Outcome  Deceased  Recovered  Stable
+Cluster                             
+0             0.0       86.4    13.6
+1            43.1       23.5    33.3
+2            29.1       21.9    49.0

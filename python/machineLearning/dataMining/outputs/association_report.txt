@@ -1,0 +1,649 @@
+ASSOCIATION RULE MINING (APRIORI)
+min_support = 0.10, min_confidence = 0.50
+
+Frequent itemsets: 330
+Rules generated  : 340
+
+======================================================================
+TOP 30 RULES BY LIFT
+======================================================================
+                                                      antecedent                 consequent  support  confidence   lift
+                                        Treatment=Oxygen_Therapy          Disease=Pneumonia   0.1000      1.0000 5.5556
+                 LOS_Category=Extended(15d+) + Treatment=Surgery Charges_Category=High_Cost   0.1200      1.0000 3.0075
+                         Admission_Type=Urgent + Age_Group=36-50                Diabetes=No   0.1000      1.0000 1.3115
+   Diabetes=No + LOS_Category=Extended(15d+) + Treatment=Surgery Charges_Category=High_Cost   0.1000      1.0000 3.0075
+                          Age_Group=36-50 + BP_Category=Elevated                Diabetes=No   0.1150      0.9787 1.2836
+                                 Gender=Male + Treatment=Surgery Charges_Category=High_Cost   0.1125      0.9783 2.9421
+                            Disease=Fracture + Outcome=Recovered                Diabetes=No   0.1075      0.9773 1.2817
+                       Diabetes=No + LOS_Category=Extended(15d+) Charges_Category=High_Cost   0.1450      0.9667 2.9073
+                                               Treatment=Surgery Charges_Category=High_Cost   0.2100      0.9655 2.9038
+                    LOS_Category=Short(1-3d) + Outcome=Recovered  Charges_Category=Low_Cost   0.1275      0.9623 2.8724
+                  Disease=Fracture + LOS_Category=Extended(15d+) Charges_Category=High_Cost   0.1250      0.9615 2.8918
+                                     LOS_Category=Extended(15d+) Charges_Category=High_Cost   0.1800      0.9600 2.8872
+                                 Diabetes=No + Treatment=Surgery Charges_Category=High_Cost   0.1675      0.9571 2.8786
+                                        LOS_Category=Short(1-3d)  Charges_Category=Low_Cost   0.1625      0.9559 2.8534
+                                 Age_Group=36-50 + Gender=Female                Diabetes=No   0.1075      0.9556 1.2532
+                            Disease=Fracture + Treatment=Surgery Charges_Category=High_Cost   0.1550      0.9538 2.8687
+Admission_Type=Urgent + BP_Category=Elevated + Outcome=Recovered                Diabetes=No   0.1025      0.9535 1.2505
+      Diabetes=No + LOS_Category=Short(1-3d) + Outcome=Recovered  Charges_Category=Low_Cost   0.1000      0.9524 2.8429
+          BP_Category=Elevated + Gender=Male + Outcome=Recovered                Diabetes=No   0.1350      0.9474 1.2425
+                             Age_Group=36-50 + Outcome=Recovered                Diabetes=No   0.1675      0.9437 1.2376
+                          Diabetes=No + LOS_Category=Short(1-3d)  Charges_Category=Low_Cost   0.1250      0.9434 2.8161
+              Diabetes=No + Disease=Fracture + Treatment=Surgery Charges_Category=High_Cost   0.1200      0.9412 2.8306
+                              BP_Category=Normal + Gender=Female                Diabetes=No   0.1050      0.9333 1.2240
+                        Outcome=Recovered + Treatment=Medication                Diabetes=No   0.1100      0.9167 1.2022
+                                                 Age_Group=36-50                Diabetes=No   0.2375      0.9135 1.1980
+                       Admission_Type=Urgent + Outcome=Recovered                Diabetes=No   0.2050      0.9111 1.1949
+                        BP_Category=Elevated + Outcome=Recovered                Diabetes=No   0.2050      0.9111 1.1949
+                    LOS_Category=Long(8-14d) + Outcome=Recovered                Diabetes=No   0.1000      0.9091 1.1923
+                      Admission_Type=Urgent + BP_Category=Normal                Diabetes=No   0.1000      0.9091 1.1923
+                Charges_Category=Medium_Cost + Outcome=Recovered                Diabetes=No   0.1250      0.9091 1.1923
+
+======================================================================
+DISEASE -> TREATMENT
+======================================================================
+                                                       antecedent                      consequent  support  confidence    lift
+                                                  Disease=Cardiac            Treatment=Monitoring   0.0725      0.4754  2.0230
+                                                 Disease=Diabetes Treatment=Lifestyle_Counselling   0.0800      0.4923  6.1538
+                                                 Disease=Fracture               Treatment=Surgery   0.1625      0.5372  2.4698
+                                                Disease=Infection           Treatment=Antibiotics   0.0875      0.4321  3.0323
+                                                Disease=Pneumonia        Treatment=Oxygen_Therapy   0.1000      0.5556  5.5556
+                                    Disease=Cardiac + Gender=Male            Treatment=Monitoring   0.0400      0.5517  2.3478
+                               Disease=Cardiac + Outcome=Deceased            Treatment=Monitoring   0.0400      0.5714  2.4316
+                                 Disease=Diabetes + Gender=Female Treatment=Lifestyle_Counselling   0.0525      0.5833  7.2917
+                      Disease=Diabetes + LOS_Category=Short(1-3d) Treatment=Lifestyle_Counselling   0.0700      0.9655 12.0690
+                             Disease=Diabetes + Outcome=Recovered Treatment=Lifestyle_Counselling   0.0650      0.5652  7.0652
+                                 Disease=Fracture + Gender=Female               Treatment=Surgery   0.0725      0.5686  2.6144
+                                   Disease=Fracture + Gender=Male               Treatment=Surgery   0.0900      0.5143  2.3645
+                   Disease=Fracture + LOS_Category=Extended(15d+)               Treatment=Surgery   0.0875      0.6731  3.0946
+                      Disease=Fracture + LOS_Category=Long(8-14d)               Treatment=Surgery   0.0700      0.5283  2.4290
+                              Disease=Fracture + Outcome=Deceased               Treatment=Surgery   0.0550      0.6875  3.1609
+                             Disease=Fracture + Outcome=Recovered               Treatment=Surgery   0.0550      0.5000  2.2989
+                                Disease=Fracture + Outcome=Stable               Treatment=Surgery   0.0525      0.4667  2.1456
+                                  Disease=Infection + Gender=Male           Treatment=Antibiotics   0.0550      0.4400  3.0877
+                            Disease=Infection + Outcome=Recovered           Treatment=Antibiotics   0.0650      0.4194  2.9428
+                                  Disease=Pneumonia + Gender=Male        Treatment=Oxygen_Therapy   0.0675      0.5510  5.5102
+                    Disease=Pneumonia + LOS_Category=Medium(4-7d)        Treatment=Oxygen_Therapy   0.0525      0.5250  5.2500
+                             Disease=Pneumonia + Outcome=Deceased        Treatment=Oxygen_Therapy   0.0425      0.8095  8.0952
+      Disease=Diabetes + Gender=Female + LOS_Category=Short(1-3d) Treatment=Lifestyle_Counselling   0.0450      0.9474 11.8421
+             Disease=Diabetes + Gender=Female + Outcome=Recovered Treatment=Lifestyle_Counselling   0.0400      0.6667  8.3333
+  Disease=Diabetes + LOS_Category=Short(1-3d) + Outcome=Recovered Treatment=Lifestyle_Counselling   0.0575      0.9583 11.9792
+   Disease=Fracture + Gender=Female + LOS_Category=Extended(15d+)               Treatment=Surgery   0.0425      0.7391  3.3983
+     Disease=Fracture + Gender=Male + LOS_Category=Extended(15d+)               Treatment=Surgery   0.0450      0.6207  2.8537
+        Disease=Fracture + Gender=Male + LOS_Category=Long(8-14d)               Treatment=Surgery   0.0425      0.5000  2.2989
+                  Disease=Fracture + Gender=Male + Outcome=Stable               Treatment=Surgery   0.0400      0.4848  2.2292
+Disease=Fracture + LOS_Category=Extended(15d+) + Outcome=Deceased               Treatment=Surgery   0.0475      0.7037  3.2354
+
+======================================================================
+AGE GROUP + DISEASE -> ADMISSION TYPE
+======================================================================
+                                                                       antecedent            consequent  support  confidence   lift
+                                               Age_Group=51-65 + Disease=Fracture Admission_Type=Urgent   0.0450      0.4737 1.1696
+                                                 Age_Group=65+ + Disease=Fracture Admission_Type=Urgent   0.0625      0.5814 1.4355
+                    Age_Group=65+ + Charges_Category=High_Cost + Disease=Fracture Admission_Type=Urgent   0.0450      0.6207 1.5326
+                                   Age_Group=65+ + Diabetes=No + Disease=Fracture Admission_Type=Urgent   0.0475      0.6333 1.5638
+                             Age_Group=65+ + Disease=Fracture + Treatment=Surgery Admission_Type=Urgent   0.0400      0.6957 1.7177
+Age_Group=65+ + Charges_Category=High_Cost + Disease=Fracture + Treatment=Surgery Admission_Type=Urgent   0.0400      0.7273 1.7957
+
+======================================================================
+RISK FACTORS -> OUTCOME
+======================================================================
+                                                                                               antecedent        consequent  support  confidence   lift
+                                                                                  Admission_Type=Elective Outcome=Recovered   0.1625      0.6701 1.4567
+                                                                                 Admission_Type=Emergency  Outcome=Deceased   0.1500      0.4255 1.9342
+                                                                                    Admission_Type=Urgent Outcome=Recovered   0.2250      0.5556 1.2077
+                                                                                          Age_Group=18-35 Outcome=Recovered   0.0725      0.8788 1.9104
+                                                                                          Age_Group=36-50 Outcome=Recovered   0.1775      0.6827 1.4841
+                                                                                          Age_Group=51-65 Outcome=Recovered   0.1750      0.5224 1.1356
+                                                                                            Age_Group=65+  Outcome=Deceased   0.1375      0.4264 1.9380
+                                                                                            Age_Group=65+    Outcome=Stable   0.1500      0.4651 1.4535
+                                                                                     BP_Category=Elevated Outcome=Recovered   0.2250      0.5422 1.1786
+                                                                                       BP_Category=Normal Outcome=Recovered   0.1550      0.6813 1.4811
+                                                                               Charges_Category=High_Cost  Outcome=Deceased   0.1350      0.4060 1.8455
+                                                                                Charges_Category=Low_Cost Outcome=Recovered   0.2450      0.7313 1.5899
+                                                                                              Diabetes=No Outcome=Recovered   0.3950      0.5180 1.1262
+                                                                                          Disease=Cardiac  Outcome=Deceased   0.0700      0.4590 2.0864
+                                                                                         Disease=Diabetes Outcome=Recovered   0.1150      0.7077 1.5385
+                                                                                        Disease=Infection Outcome=Recovered   0.1550      0.7654 1.6640
+                                                                                            Gender=Female Outcome=Recovered   0.2075      0.4798 1.0430
+                                                                              LOS_Category=Extended(15d+)  Outcome=Deceased   0.1000      0.5333 2.4242
+                                                                                 LOS_Category=Long(8-14d)    Outcome=Stable   0.1250      0.4000 1.2500
+                                                                                LOS_Category=Medium(4-7d) Outcome=Recovered   0.1875      0.5682 1.2352
+                                                                                 LOS_Category=Short(1-3d) Outcome=Recovered   0.1325      0.7794 1.6944
+                                                                                 Treatment=Oxygen_Therapy  Outcome=Deceased   0.0425      0.4250 1.9318
+                                                                                    Treatment=Antibiotics Outcome=Recovered   0.0825      0.5789 1.2586
+                                                                          Treatment=Lifestyle_Counselling Outcome=Recovered   0.0650      0.8125 1.7663
+                                                                                     Treatment=Medication Outcome=Recovered   0.1200      0.5333 1.1594
+                                                                Admission_Type=Elective + Age_Group=36-50 Outcome=Recovered   0.0550      0.8462 1.8395
+                                                                Admission_Type=Elective + Age_Group=51-65 Outcome=Recovered   0.0675      0.9000 1.9565
+                                                           Admission_Type=Elective + BP_Category=Elevated Outcome=Recovered   0.0725      0.7073 1.5376
+                                                             Admission_Type=Elective + BP_Category=Normal Outcome=Recovered   0.0550      0.7857 1.7081
+                                                      Admission_Type=Elective + Charges_Category=Low_Cost Outcome=Recovered   0.1000      0.8000 1.7391
+                                                                    Admission_Type=Elective + Diabetes=No Outcome=Recovered   0.1200      0.6957 1.5123
+                                                                   Admission_Type=Elective + Diabetes=Yes Outcome=Recovered   0.0425      0.6071 1.3199
+                                                               Admission_Type=Elective + Disease=Diabetes Outcome=Recovered   0.0475      0.7600 1.6522
+                                                              Admission_Type=Elective + Disease=Infection Outcome=Recovered   0.0700      0.8485 1.8445
+                                                                  Admission_Type=Elective + Gender=Female Outcome=Recovered   0.0775      0.6889 1.4976
+                                                                    Admission_Type=Elective + Gender=Male Outcome=Recovered   0.0850      0.6538 1.4214
+                                                      Admission_Type=Elective + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0675      0.7500 1.6304
+                                                       Admission_Type=Elective + LOS_Category=Short(1-3d) Outcome=Recovered   0.0525      0.7778 1.6908
+                                                           Admission_Type=Elective + Treatment=Monitoring Outcome=Recovered   0.0400      0.5714 1.2422
+                                                               Admission_Type=Emergency + Age_Group=36-50    Outcome=Stable   0.0400      0.4211 1.3158
+                                                               Admission_Type=Emergency + Age_Group=51-65  Outcome=Deceased   0.0475      0.4043 1.8375
+                                                               Admission_Type=Emergency + Age_Group=51-65    Outcome=Stable   0.0550      0.4681 1.4628
+                                                                 Admission_Type=Emergency + Age_Group=65+  Outcome=Deceased   0.0750      0.7143 3.2468
+                                                              Admission_Type=Emergency + BP_Category=High  Outcome=Deceased   0.0975      0.6190 2.8139
+                                                    Admission_Type=Emergency + Charges_Category=High_Cost  Outcome=Deceased   0.0925      0.6066 2.7571
+                                                  Admission_Type=Emergency + Charges_Category=Medium_Cost    Outcome=Stable   0.0625      0.4237 1.3242
+                                                                  Admission_Type=Emergency + Diabetes=Yes  Outcome=Deceased   0.0600      0.6667 3.0303
+                                                               Admission_Type=Emergency + Disease=Cardiac  Outcome=Deceased   0.0575      0.6216 2.8256
+                                                              Admission_Type=Emergency + Disease=Fracture  Outcome=Deceased   0.0450      0.4500 2.0455
+                                                                 Admission_Type=Emergency + Gender=Female  Outcome=Deceased   0.0675      0.4737 2.1531
+                                                   Admission_Type=Emergency + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0650      0.7027 3.1941
+                                                      Admission_Type=Emergency + LOS_Category=Long(8-14d)  Outcome=Deceased   0.0550      0.4151 1.8868
+                                                      Admission_Type=Emergency + LOS_Category=Long(8-14d)    Outcome=Stable   0.0550      0.4151 1.2972
+                                                     Admission_Type=Emergency + LOS_Category=Medium(4-7d)    Outcome=Stable   0.0425      0.4048 1.2649
+                                                          Admission_Type=Emergency + Treatment=Monitoring  Outcome=Deceased   0.0425      0.4722 2.1465
+                                                             Admission_Type=Emergency + Treatment=Surgery  Outcome=Deceased   0.0475      0.5938 2.6989
+                                                                  Admission_Type=Urgent + Age_Group=36-50 Outcome=Recovered   0.0950      0.9500 2.0652
+                                                                  Admission_Type=Urgent + Age_Group=51-65 Outcome=Recovered   0.0925      0.6491 1.4111
+                                                                    Admission_Type=Urgent + Age_Group=65+    Outcome=Stable   0.0850      0.6071 1.8973
+                                                             Admission_Type=Urgent + BP_Category=Elevated Outcome=Recovered   0.1075      0.6418 1.3952
+                                                                 Admission_Type=Urgent + BP_Category=High    Outcome=Stable   0.0650      0.5306 1.6582
+                                                               Admission_Type=Urgent + BP_Category=Normal Outcome=Recovered   0.0825      0.7500 1.6304
+                                                       Admission_Type=Urgent + Charges_Category=High_Cost    Outcome=Stable   0.0600      0.5000 1.5625
+                                                        Admission_Type=Urgent + Charges_Category=Low_Cost Outcome=Recovered   0.1200      0.7619 1.6563
+                                                     Admission_Type=Urgent + Charges_Category=Medium_Cost Outcome=Recovered   0.0675      0.5294 1.1509
+                                                                      Admission_Type=Urgent + Diabetes=No Outcome=Recovered   0.2050      0.6260 1.3608
+                                                                 Admission_Type=Urgent + Disease=Diabetes Outcome=Recovered   0.0575      0.7931 1.7241
+                                                                 Admission_Type=Urgent + Disease=Fracture    Outcome=Stable   0.0675      0.4576 1.4301
+                                                                Admission_Type=Urgent + Disease=Infection Outcome=Recovered   0.0725      0.8056 1.7512
+                                                                    Admission_Type=Urgent + Gender=Female Outcome=Recovered   0.1050      0.5915 1.2860
+                                                                      Admission_Type=Urgent + Gender=Male Outcome=Recovered   0.1200      0.5275 1.1467
+                                                         Admission_Type=Urgent + LOS_Category=Long(8-14d)    Outcome=Stable   0.0575      0.4792 1.4974
+                                                        Admission_Type=Urgent + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0800      0.5926 1.2882
+                                                         Admission_Type=Urgent + LOS_Category=Short(1-3d) Outcome=Recovered   0.0750      0.9375 2.0380
+                                                             Admission_Type=Urgent + Treatment=Medication Outcome=Recovered   0.0650      0.6500 1.4130
+                                                             Admission_Type=Urgent + Treatment=Monitoring Outcome=Recovered   0.0425      0.5667 1.2319
+                                                                Admission_Type=Urgent + Treatment=Surgery    Outcome=Stable   0.0450      0.4500 1.4062
+                                                                   Age_Group=18-35 + BP_Category=Elevated Outcome=Recovered   0.0425      0.8947 1.9451
+                                                                            Age_Group=18-35 + Diabetes=No Outcome=Recovered   0.0550      0.8462 1.8395
+                                                                            Age_Group=18-35 + Gender=Male Outcome=Recovered   0.0400      0.8421 1.8307
+                                                                   Age_Group=36-50 + BP_Category=Elevated Outcome=Recovered   0.0825      0.7021 1.5264
+                                                                     Age_Group=36-50 + BP_Category=Normal Outcome=Recovered   0.0650      0.7879 1.7128
+                                                              Age_Group=36-50 + Charges_Category=Low_Cost Outcome=Recovered   0.0875      0.9722 2.1135
+                                                           Age_Group=36-50 + Charges_Category=Medium_Cost Outcome=Recovered   0.0500      0.8000 1.7391
+                                                                            Age_Group=36-50 + Diabetes=No Outcome=Recovered   0.1675      0.7053 1.5332
+                                                                       Age_Group=36-50 + Disease=Fracture Outcome=Recovered   0.0475      0.5938 1.2908
+                                                                      Age_Group=36-50 + Disease=Infection Outcome=Recovered   0.0600      0.9600 2.0870
+                                                                          Age_Group=36-50 + Gender=Female Outcome=Recovered   0.0800      0.7111 1.5459
+                                                                            Age_Group=36-50 + Gender=Male Outcome=Recovered   0.0975      0.6610 1.4370
+                                                               Age_Group=36-50 + LOS_Category=Long(8-14d) Outcome=Recovered   0.0500      0.5882 1.2788
+                                                              Age_Group=36-50 + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0625      1.0000 2.1739
+                                                               Age_Group=36-50 + LOS_Category=Short(1-3d) Outcome=Recovered   0.0425      0.9444 2.0531
+                                                                   Age_Group=36-50 + Treatment=Medication Outcome=Recovered   0.0500      0.7407 1.6103
+                                                                   Age_Group=51-65 + BP_Category=Elevated Outcome=Recovered   0.0850      0.5862 1.2744
+                                                                       Age_Group=51-65 + BP_Category=High    Outcome=Stable   0.0475      0.4130 1.2908
+                                                                     Age_Group=51-65 + BP_Category=Normal Outcome=Recovered   0.0550      0.7333 1.5942
+                                                             Age_Group=51-65 + Charges_Category=High_Cost  Outcome=Deceased   0.0475      0.4524 2.0563
+                                                              Age_Group=51-65 + Charges_Category=Low_Cost Outcome=Recovered   0.1000      0.8333 1.8116
+                                                           Age_Group=51-65 + Charges_Category=Medium_Cost Outcome=Recovered   0.0575      0.5227 1.1364
+                                                           Age_Group=51-65 + Charges_Category=Medium_Cost    Outcome=Stable   0.0475      0.4318 1.3494
+                                                                            Age_Group=51-65 + Diabetes=No Outcome=Recovered   0.1450      0.5859 1.2736
+                                                                       Age_Group=51-65 + Disease=Diabetes Outcome=Recovered   0.0600      0.8889 1.9324
+                                                                      Age_Group=51-65 + Disease=Infection Outcome=Recovered   0.0625      0.9259 2.0129
+                                                                          Age_Group=51-65 + Gender=Female Outcome=Recovered   0.0750      0.5556 1.2077
+                                                                            Age_Group=51-65 + Gender=Male Outcome=Recovered   0.1000      0.5000 1.0870
+                                                               Age_Group=51-65 + LOS_Category=Long(8-14d)    Outcome=Stable   0.0450      0.4615 1.4423
+                                                              Age_Group=51-65 + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0775      0.6596 1.4339
+                                                               Age_Group=51-65 + LOS_Category=Short(1-3d) Outcome=Recovered   0.0575      0.8519 1.8519
+                                                                   Age_Group=51-65 + Treatment=Monitoring Outcome=Recovered   0.0450      0.5143 1.1180
+                                                                     Age_Group=65+ + BP_Category=Elevated    Outcome=Stable   0.0550      0.5238 1.6369
+                                                                         Age_Group=65+ + BP_Category=High  Outcome=Deceased   0.0925      0.5441 2.4733
+                                                               Age_Group=65+ + Charges_Category=High_Cost  Outcome=Deceased   0.0625      0.6250 2.8409
+                                                                Age_Group=65+ + Charges_Category=Low_Cost    Outcome=Stable   0.0550      0.6471 2.0221
+                                                             Age_Group=65+ + Charges_Category=Medium_Cost  Outcome=Deceased   0.0650      0.4727 2.1488
+                                                             Age_Group=65+ + Charges_Category=Medium_Cost    Outcome=Stable   0.0625      0.4545 1.4205
+                                                                              Age_Group=65+ + Diabetes=No    Outcome=Stable   0.1050      0.4941 1.5441
+                                                                             Age_Group=65+ + Diabetes=Yes  Outcome=Deceased   0.0575      0.5227 2.3760
+                                                                             Age_Group=65+ + Diabetes=Yes    Outcome=Stable   0.0450      0.4091 1.2784
+                                                                         Age_Group=65+ + Disease=Fracture  Outcome=Deceased   0.0450      0.4186 1.9027
+                                                                         Age_Group=65+ + Disease=Fracture    Outcome=Stable   0.0550      0.5116 1.5988
+                                                                        Age_Group=65+ + Disease=Pneumonia  Outcome=Deceased   0.0400      0.6154 2.7972
+                                                                            Age_Group=65+ + Gender=Female  Outcome=Deceased   0.0650      0.4333 1.9697
+                                                                            Age_Group=65+ + Gender=Female    Outcome=Stable   0.0650      0.4333 1.3542
+                                                                              Age_Group=65+ + Gender=Male  Outcome=Deceased   0.0725      0.4203 1.9104
+                                                                              Age_Group=65+ + Gender=Male    Outcome=Stable   0.0850      0.4928 1.5399
+                                                                 Age_Group=65+ + LOS_Category=Long(8-14d)  Outcome=Deceased   0.0625      0.5319 2.4178
+                                                                 Age_Group=65+ + LOS_Category=Long(8-14d)    Outcome=Stable   0.0475      0.4043 1.2633
+                                                                Age_Group=65+ + LOS_Category=Medium(4-7d)    Outcome=Stable   0.0650      0.5652 1.7663
+                                                                        Age_Group=65+ + Treatment=Surgery  Outcome=Deceased   0.0425      0.5862 2.6646
+                                                         BP_Category=Elevated + Charges_Category=Low_Cost Outcome=Recovered   0.1200      0.8136 1.7686
+                                                      BP_Category=Elevated + Charges_Category=Medium_Cost Outcome=Recovered   0.0600      0.4615 1.0033
+                                                                       BP_Category=Elevated + Diabetes=No Outcome=Recovered   0.2050      0.5899 1.2825
+                                                                  BP_Category=Elevated + Disease=Diabetes Outcome=Recovered   0.0550      0.7586 1.6492
+                                                                  BP_Category=Elevated + Disease=Fracture Outcome=Recovered   0.0550      0.5238 1.1387
+                                                                 BP_Category=Elevated + Disease=Infection Outcome=Recovered   0.0725      0.7838 1.7039
+                                                                     BP_Category=Elevated + Gender=Female Outcome=Recovered   0.0825      0.5323 1.1571
+                                                                       BP_Category=Elevated + Gender=Male Outcome=Recovered   0.1425      0.5481 1.1915
+                                                         BP_Category=Elevated + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0900      0.6667 1.4493
+                                                          BP_Category=Elevated + LOS_Category=Short(1-3d) Outcome=Recovered   0.0625      0.8065 1.7532
+                                                             BP_Category=Elevated + Treatment=Antibiotics Outcome=Recovered   0.0450      0.6667 1.4493
+                                                              BP_Category=Elevated + Treatment=Medication Outcome=Recovered   0.0625      0.6579 1.4302
+                                                            BP_Category=High + Charges_Category=High_Cost  Outcome=Deceased   0.0725      0.6304 2.8656
+                                                             BP_Category=High + Charges_Category=Low_Cost Outcome=Recovered   0.0550      0.5000 1.0870
+                                                          BP_Category=High + Charges_Category=Medium_Cost  Outcome=Deceased   0.0500      0.4000 1.8182
+                                                          BP_Category=High + Charges_Category=Medium_Cost    Outcome=Stable   0.0550      0.4400 1.3750
+                                                                           BP_Category=High + Diabetes=No    Outcome=Stable   0.0900      0.4286 1.3393
+                                                                          BP_Category=High + Diabetes=Yes  Outcome=Deceased   0.0650      0.4643 2.1104
+                                                                      BP_Category=High + Disease=Fracture  Outcome=Deceased   0.0500      0.4000 1.8182
+                                                                      BP_Category=High + Disease=Fracture    Outcome=Stable   0.0625      0.5000 1.5625
+                                                                     BP_Category=High + Disease=Pneumonia  Outcome=Deceased   0.0400      0.5333 2.4242
+                                                                           BP_Category=High + Gender=Male    Outcome=Stable   0.0850      0.4533 1.4167
+                                                           BP_Category=High + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0550      0.8148 3.7037
+                                                              BP_Category=High + LOS_Category=Long(8-14d)  Outcome=Deceased   0.0450      0.4186 1.9027
+                                                              BP_Category=High + LOS_Category=Long(8-14d)    Outcome=Stable   0.0500      0.4651 1.4535
+                                                             BP_Category=High + LOS_Category=Medium(4-7d)    Outcome=Stable   0.0600      0.5217 1.6304
+                                                                     BP_Category=High + Treatment=Surgery  Outcome=Deceased   0.0450      0.6207 2.8213
+                                                           BP_Category=Normal + Charges_Category=Low_Cost Outcome=Recovered   0.0700      0.9032 1.9635
+                                                        BP_Category=Normal + Charges_Category=Medium_Cost Outcome=Recovered   0.0550      0.7333 1.5942
+                                                                         BP_Category=Normal + Diabetes=No Outcome=Recovered   0.1375      0.6962 1.5135
+                                                                    BP_Category=Normal + Disease=Fracture Outcome=Recovered   0.0425      0.5862 1.2744
+                                                                   BP_Category=Normal + Disease=Infection Outcome=Recovered   0.0475      0.9048 1.9669
+                                                                       BP_Category=Normal + Gender=Female Outcome=Recovered   0.0775      0.6889 1.4976
+                                                                         BP_Category=Normal + Gender=Male Outcome=Recovered   0.0775      0.6739 1.4650
+                                                            BP_Category=Normal + LOS_Category=Long(8-14d) Outcome=Recovered   0.0400      0.5517 1.1994
+                                                           BP_Category=Normal + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0700      0.8750 1.9022
+                                                                BP_Category=Normal + Treatment=Medication Outcome=Recovered   0.0450      0.7826 1.7013
+                                                                Charges_Category=High_Cost + Diabetes=Yes  Outcome=Deceased   0.0475      0.6129 2.7859
+                                                             Charges_Category=High_Cost + Disease=Cardiac  Outcome=Deceased   0.0525      0.5250 2.3864
+                                                               Charges_Category=High_Cost + Gender=Female  Outcome=Deceased   0.0675      0.4426 2.0119
+                                                                 Charges_Category=High_Cost + Gender=Male    Outcome=Stable   0.0750      0.4167 1.3021
+                                                 Charges_Category=High_Cost + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0975      0.5417 2.4621
+                                                    Charges_Category=High_Cost + LOS_Category=Long(8-14d)    Outcome=Stable   0.0625      0.4167 1.3021
+                                                                  Charges_Category=Low_Cost + Diabetes=No Outcome=Recovered   0.1975      0.7453 1.6202
+                                                                 Charges_Category=Low_Cost + Diabetes=Yes Outcome=Recovered   0.0475      0.6786 1.4752
+                                                             Charges_Category=Low_Cost + Disease=Diabetes Outcome=Recovered   0.0800      0.8000 1.7391
+                                                            Charges_Category=Low_Cost + Disease=Infection Outcome=Recovered   0.1175      0.8393 1.8245
+                                                                Charges_Category=Low_Cost + Gender=Female Outcome=Recovered   0.1125      0.7627 1.6581
+                                                                  Charges_Category=Low_Cost + Gender=Male Outcome=Recovered   0.1325      0.7067 1.5362
+                                                    Charges_Category=Low_Cost + LOS_Category=Medium(4-7d) Outcome=Recovered   0.1125      0.6818 1.4822
+                                                     Charges_Category=Low_Cost + LOS_Category=Short(1-3d) Outcome=Recovered   0.1275      0.7846 1.7057
+                                                        Charges_Category=Low_Cost + Treatment=Antibiotics Outcome=Recovered   0.0575      0.6970 1.5152
+                                              Charges_Category=Low_Cost + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0575      0.8214 1.7857
+                                                         Charges_Category=Low_Cost + Treatment=Medication Outcome=Recovered   0.0600      0.7500 1.6304
+                                                         Charges_Category=Low_Cost + Treatment=Monitoring Outcome=Recovered   0.0550      0.8462 1.8395
+                                                               Charges_Category=Medium_Cost + Diabetes=No Outcome=Recovered   0.1250      0.5155 1.1206
+                                                              Charges_Category=Medium_Cost + Diabetes=Yes    Outcome=Stable   0.0425      0.4722 1.4757
+                                                 Charges_Category=Medium_Cost + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0750      0.4615 1.0033
+                                                      Charges_Category=Medium_Cost + Treatment=Medication Outcome=Recovered   0.0550      0.4889 1.0628
+                                                      Charges_Category=Medium_Cost + Treatment=Monitoring    Outcome=Stable   0.0425      0.4359 1.3622
+                                                                            Diabetes=No + Disease=Cardiac    Outcome=Stable   0.0575      0.4894 1.5293
+                                                                           Diabetes=No + Disease=Diabetes Outcome=Recovered   0.0900      0.7660 1.6651
+                                                                           Diabetes=No + Disease=Fracture Outcome=Recovered   0.1075      0.4624 1.0051
+                                                                          Diabetes=No + Disease=Infection Outcome=Recovered   0.1225      0.8167 1.7754
+                                                                          Diabetes=No + Disease=Pneumonia    Outcome=Stable   0.0600      0.4138 1.2931
+                                                                              Diabetes=No + Gender=Female Outcome=Recovered   0.1775      0.5338 1.1605
+                                                                                Diabetes=No + Gender=Male Outcome=Recovered   0.2175      0.5058 1.0996
+                                                                Diabetes=No + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0700      0.4667 2.1212
+                                                                  Diabetes=No + LOS_Category=Medium(4-7d) Outcome=Recovered   0.1600      0.6337 1.3775
+                                                                   Diabetes=No + LOS_Category=Short(1-3d) Outcome=Recovered   0.1050      0.7925 1.7227
+                                                                      Diabetes=No + Treatment=Antibiotics Outcome=Recovered   0.0675      0.6136 1.3340
+                                                            Diabetes=No + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0475      0.8636 1.8775
+                                                                       Diabetes=No + Treatment=Medication Outcome=Recovered   0.1100      0.6111 1.3285
+                                                                       Diabetes=No + Treatment=Monitoring Outcome=Recovered   0.0875      0.5303 1.1528
+                                                                             Diabetes=Yes + Gender=Female  Outcome=Deceased   0.0475      0.4750 2.1591
+                                                                               Diabetes=Yes + Gender=Male    Outcome=Stable   0.0600      0.4364 1.3636
+                                                                  Diabetes=Yes + LOS_Category=Long(8-14d)  Outcome=Deceased   0.0400      0.4706 2.1390
+                                                                   Disease=Cardiac + Treatment=Monitoring  Outcome=Deceased   0.0400      0.5517 2.5078
+                                                                         Disease=Diabetes + Gender=Female Outcome=Recovered   0.0600      0.6667 1.4493
+                                                                           Disease=Diabetes + Gender=Male Outcome=Recovered   0.0550      0.7586 1.6492
+                                                              Disease=Diabetes + LOS_Category=Short(1-3d) Outcome=Recovered   0.0600      0.8276 1.7991
+                                                       Disease=Diabetes + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0650      0.8125 1.7663
+                                                                         Disease=Fracture + Gender=Female Outcome=Recovered   0.0600      0.4706 1.0230
+                                                                           Disease=Fracture + Gender=Male    Outcome=Stable   0.0825      0.4714 1.4732
+                                                           Disease=Fracture + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0675      0.5192 2.3601
+                                                              Disease=Fracture + LOS_Category=Long(8-14d) Outcome=Recovered   0.0625      0.4717 1.0254
+                                                              Disease=Fracture + LOS_Category=Long(8-14d)    Outcome=Stable   0.0575      0.4340 1.3561
+                                                                        Disease=Infection + Gender=Female Outcome=Recovered   0.0600      0.7742 1.6830
+                                                                          Disease=Infection + Gender=Male Outcome=Recovered   0.0950      0.7600 1.6522
+                                                            Disease=Infection + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0875      0.8140 1.7695
+                                                             Disease=Infection + LOS_Category=Short(1-3d) Outcome=Recovered   0.0600      0.8889 1.9324
+                                                                Disease=Infection + Treatment=Antibiotics Outcome=Recovered   0.0650      0.7429 1.6149
+                                                                 Disease=Infection + Treatment=Medication Outcome=Recovered   0.0425      0.8095 1.7598
+                                                                 Disease=Infection + Treatment=Monitoring Outcome=Recovered   0.0475      0.7600 1.6522
+                                                            Disease=Pneumonia + LOS_Category=Medium(4-7d)    Outcome=Stable   0.0425      0.4250 1.3281
+                                                             Disease=Pneumonia + Treatment=Oxygen_Therapy  Outcome=Deceased   0.0425      0.4250 1.9318
+                                                              Gender=Female + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0425      0.5152 2.3416
+                                                                Gender=Female + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0825      0.5789 1.2586
+                                                                 Gender=Female + LOS_Category=Short(1-3d) Outcome=Recovered   0.0700      0.8235 1.7903
+                                                          Gender=Female + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0400      0.7619 1.6563
+                                                                     Gender=Female + Treatment=Medication Outcome=Recovered   0.0475      0.4750 1.0326
+                                                                Gender=Male + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0575      0.5476 2.4892
+                                                                   Gender=Male + LOS_Category=Long(8-14d)    Outcome=Stable   0.0850      0.4474 1.3980
+                                                                  Gender=Male + LOS_Category=Medium(4-7d) Outcome=Recovered   0.1050      0.5600 1.2174
+                                                                   Gender=Male + LOS_Category=Short(1-3d) Outcome=Recovered   0.0625      0.7353 1.5985
+                                                                      Gender=Male + Treatment=Antibiotics Outcome=Recovered   0.0550      0.5641 1.2263
+                                                                       Gender=Male + Treatment=Medication Outcome=Recovered   0.0725      0.5800 1.2609
+                                                                          Gender=Male + Treatment=Surgery    Outcome=Stable   0.0500      0.4348 1.3587
+                                                          LOS_Category=Extended(15d+) + Treatment=Surgery  Outcome=Deceased   0.0625      0.5208 2.3674
+                                                        LOS_Category=Medium(4-7d) + Treatment=Antibiotics Outcome=Recovered   0.0475      0.6333 1.3768
+                                                         LOS_Category=Medium(4-7d) + Treatment=Medication Outcome=Recovered   0.0650      0.5909 1.2846
+                                                         LOS_Category=Medium(4-7d) + Treatment=Monitoring Outcome=Recovered   0.0500      0.6452 1.4025
+                                               LOS_Category=Short(1-3d) + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0575      0.8214 1.7857
+                                                  Admission_Type=Elective + Age_Group=36-50 + Diabetes=No Outcome=Recovered   0.0450      0.8182 1.7787
+                                    Admission_Type=Elective + Age_Group=51-65 + Charges_Category=Low_Cost Outcome=Recovered   0.0450      0.9474 2.0595
+                                                  Admission_Type=Elective + Age_Group=51-65 + Diabetes=No Outcome=Recovered   0.0525      0.9545 2.0751
+                               Admission_Type=Elective + BP_Category=Elevated + Charges_Category=Low_Cost Outcome=Recovered   0.0525      0.8400 1.8261
+                                             Admission_Type=Elective + BP_Category=Elevated + Diabetes=No Outcome=Recovered   0.0575      0.7419 1.6129
+                                             Admission_Type=Elective + BP_Category=Elevated + Gender=Male Outcome=Recovered   0.0425      0.6800 1.4783
+                                               Admission_Type=Elective + BP_Category=Normal + Diabetes=No Outcome=Recovered   0.0450      0.7826 1.7013
+                                        Admission_Type=Elective + Charges_Category=Low_Cost + Diabetes=No Outcome=Recovered   0.0700      0.7778 1.6908
+                                  Admission_Type=Elective + Charges_Category=Low_Cost + Disease=Infection Outcome=Recovered   0.0550      0.8462 1.8395
+                                      Admission_Type=Elective + Charges_Category=Low_Cost + Gender=Female Outcome=Recovered   0.0600      0.8889 1.9324
+                                        Admission_Type=Elective + Charges_Category=Low_Cost + Gender=Male Outcome=Recovered   0.0400      0.6957 1.5123
+                          Admission_Type=Elective + Charges_Category=Low_Cost + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0475      0.8636 1.8775
+                           Admission_Type=Elective + Charges_Category=Low_Cost + LOS_Category=Short(1-3d) Outcome=Recovered   0.0525      0.7778 1.6908
+                                                Admission_Type=Elective + Diabetes=No + Disease=Infection Outcome=Recovered   0.0475      0.8636 1.8775
+                                                    Admission_Type=Elective + Diabetes=No + Gender=Female Outcome=Recovered   0.0550      0.7097 1.5428
+                                                      Admission_Type=Elective + Diabetes=No + Gender=Male Outcome=Recovered   0.0650      0.6842 1.4874
+                                        Admission_Type=Elective + Diabetes=No + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0450      0.7826 1.7013
+                                         Admission_Type=Elective + Diabetes=No + LOS_Category=Short(1-3d) Outcome=Recovered   0.0400      0.8000 1.7391
+                                  Admission_Type=Elective + Disease=Infection + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0400      0.9412 2.0460
+                                  Admission_Type=Emergency + Age_Group=51-65 + Charges_Category=High_Cost  Outcome=Deceased   0.0400      0.7273 3.3058
+                                                 Admission_Type=Emergency + Age_Group=51-65 + Diabetes=No    Outcome=Stable   0.0425      0.5000 1.5625
+                                                 Admission_Type=Emergency + Age_Group=51-65 + Gender=Male    Outcome=Stable   0.0400      0.5161 1.6129
+                                              Admission_Type=Emergency + Age_Group=65+ + BP_Category=High  Outcome=Deceased   0.0600      0.8889 4.0404
+                                  Admission_Type=Emergency + Age_Group=65+ + Charges_Category=Medium_Cost  Outcome=Deceased   0.0425      0.7083 3.2197
+                                                   Admission_Type=Emergency + Age_Group=65+ + Diabetes=No  Outcome=Deceased   0.0425      0.6800 3.0909
+                                      Admission_Type=Emergency + Age_Group=65+ + LOS_Category=Long(8-14d)  Outcome=Deceased   0.0400      0.8421 3.8278
+                                 Admission_Type=Emergency + BP_Category=High + Charges_Category=High_Cost  Outcome=Deceased   0.0525      0.7778 3.5354
+                                                Admission_Type=Emergency + BP_Category=High + Diabetes=No  Outcome=Deceased   0.0500      0.5263 2.3923
+                                               Admission_Type=Emergency + BP_Category=High + Diabetes=Yes  Outcome=Deceased   0.0475      0.7600 3.4545
+                                              Admission_Type=Emergency + BP_Category=High + Gender=Female  Outcome=Deceased   0.0425      0.6800 3.0909
+                                                Admission_Type=Emergency + BP_Category=High + Gender=Male  Outcome=Deceased   0.0550      0.5789 2.6316
+                                      Admission_Type=Emergency + Charges_Category=High_Cost + Diabetes=No  Outcome=Deceased   0.0575      0.5111 2.3232
+                                  Admission_Type=Emergency + Charges_Category=High_Cost + Disease=Cardiac  Outcome=Deceased   0.0425      0.6800 3.0909
+                                 Admission_Type=Emergency + Charges_Category=High_Cost + Disease=Fracture  Outcome=Deceased   0.0400      0.5714 2.5974
+                                    Admission_Type=Emergency + Charges_Category=High_Cost + Gender=Female  Outcome=Deceased   0.0425      0.6071 2.7597
+                                      Admission_Type=Emergency + Charges_Category=High_Cost + Gender=Male  Outcome=Deceased   0.0500      0.6061 2.7548
+                      Admission_Type=Emergency + Charges_Category=High_Cost + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0625      0.6944 3.1566
+                                Admission_Type=Emergency + Charges_Category=High_Cost + Treatment=Surgery  Outcome=Deceased   0.0450      0.5806 2.6393
+                                    Admission_Type=Emergency + Charges_Category=Medium_Cost + Diabetes=No    Outcome=Stable   0.0425      0.4048 1.2649
+                                    Admission_Type=Emergency + Charges_Category=Medium_Cost + Gender=Male    Outcome=Stable   0.0400      0.4324 1.3514
+                                                   Admission_Type=Emergency + Diabetes=No + Gender=Female    Outcome=Stable   0.0425      0.4146 1.2957
+                                     Admission_Type=Emergency + Diabetes=No + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0450      0.6429 2.9221
+                                        Admission_Type=Emergency + Diabetes=No + LOS_Category=Long(8-14d)    Outcome=Stable   0.0450      0.4737 1.4803
+                                     Admission_Type=Emergency + Gender=Male + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0425      0.7727 3.5124
+                                        Admission_Type=Emergency + Gender=Male + LOS_Category=Long(8-14d)    Outcome=Stable   0.0400      0.5333 1.6667
+                                           Admission_Type=Urgent + Age_Group=36-50 + BP_Category=Elevated Outcome=Recovered   0.0450      0.9000 1.9565
+                                      Admission_Type=Urgent + Age_Group=36-50 + Charges_Category=Low_Cost Outcome=Recovered   0.0500      1.0000 2.1739
+                                                    Admission_Type=Urgent + Age_Group=36-50 + Diabetes=No Outcome=Recovered   0.0950      0.9500 2.0652
+                                                  Admission_Type=Urgent + Age_Group=36-50 + Gender=Female Outcome=Recovered   0.0475      0.9500 2.0652
+                                                    Admission_Type=Urgent + Age_Group=36-50 + Gender=Male Outcome=Recovered   0.0475      0.9500 2.0652
+                                           Admission_Type=Urgent + Age_Group=51-65 + BP_Category=Elevated Outcome=Recovered   0.0400      0.6957 1.5123
+                                      Admission_Type=Urgent + Age_Group=51-65 + Charges_Category=Low_Cost Outcome=Recovered   0.0525      0.8750 1.9022
+                                                    Admission_Type=Urgent + Age_Group=51-65 + Diabetes=No Outcome=Recovered   0.0775      0.7209 1.5672
+                                                  Admission_Type=Urgent + Age_Group=51-65 + Gender=Female Outcome=Recovered   0.0425      0.7083 1.5399
+                                                    Admission_Type=Urgent + Age_Group=51-65 + Gender=Male Outcome=Recovered   0.0500      0.6061 1.3175
+                                                 Admission_Type=Urgent + Age_Group=65+ + BP_Category=High    Outcome=Stable   0.0425      0.6296 1.9676
+                                                      Admission_Type=Urgent + Age_Group=65+ + Diabetes=No    Outcome=Stable   0.0650      0.6500 2.0312
+                                                    Admission_Type=Urgent + Age_Group=65+ + Gender=Female    Outcome=Stable   0.0400      0.6667 2.0833
+                                                      Admission_Type=Urgent + Age_Group=65+ + Gender=Male    Outcome=Stable   0.0450      0.5625 1.7578
+                                 Admission_Type=Urgent + BP_Category=Elevated + Charges_Category=Low_Cost Outcome=Recovered   0.0550      0.8800 1.9130
+                                               Admission_Type=Urgent + BP_Category=Elevated + Diabetes=No Outcome=Recovered   0.1025      0.7069 1.5367
+                                               Admission_Type=Urgent + BP_Category=Elevated + Gender=Male Outcome=Recovered   0.0725      0.6304 1.3705
+                                 Admission_Type=Urgent + BP_Category=Elevated + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0400      0.7273 1.5810
+                                                   Admission_Type=Urgent + BP_Category=High + Diabetes=No    Outcome=Stable   0.0425      0.5484 1.7137
+                                   Admission_Type=Urgent + BP_Category=Normal + Charges_Category=Low_Cost Outcome=Recovered   0.0400      1.0000 2.1739
+                                                 Admission_Type=Urgent + BP_Category=Normal + Diabetes=No Outcome=Recovered   0.0775      0.7750 1.6848
+                                               Admission_Type=Urgent + BP_Category=Normal + Gender=Female Outcome=Recovered   0.0500      0.8000 1.7391
+                                         Admission_Type=Urgent + Charges_Category=High_Cost + Diabetes=No    Outcome=Stable   0.0425      0.4359 1.3622
+                                    Admission_Type=Urgent + Charges_Category=High_Cost + Disease=Fracture    Outcome=Stable   0.0450      0.4615 1.4423
+                                   Admission_Type=Urgent + Charges_Category=High_Cost + Treatment=Surgery    Outcome=Stable   0.0450      0.4615 1.4423
+                                          Admission_Type=Urgent + Charges_Category=Low_Cost + Diabetes=No Outcome=Recovered   0.1025      0.7885 1.7140
+                                    Admission_Type=Urgent + Charges_Category=Low_Cost + Disease=Infection Outcome=Recovered   0.0575      0.8519 1.8519
+                                        Admission_Type=Urgent + Charges_Category=Low_Cost + Gender=Female Outcome=Recovered   0.0450      0.7200 1.5652
+                                          Admission_Type=Urgent + Charges_Category=Low_Cost + Gender=Male Outcome=Recovered   0.0750      0.7895 1.7162
+                            Admission_Type=Urgent + Charges_Category=Low_Cost + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0425      0.5667 1.2319
+                             Admission_Type=Urgent + Charges_Category=Low_Cost + LOS_Category=Short(1-3d) Outcome=Recovered   0.0725      0.9355 2.0337
+                                       Admission_Type=Urgent + Charges_Category=Medium_Cost + Diabetes=No Outcome=Recovered   0.0650      0.6500 1.4130
+                                                   Admission_Type=Urgent + Diabetes=No + Disease=Diabetes Outcome=Recovered   0.0475      0.8636 1.8775
+                                                   Admission_Type=Urgent + Diabetes=No + Disease=Fracture Outcome=Recovered   0.0575      0.4894 1.0638
+                                                  Admission_Type=Urgent + Diabetes=No + Disease=Infection Outcome=Recovered   0.0625      0.8621 1.8741
+                                                      Admission_Type=Urgent + Diabetes=No + Gender=Female Outcome=Recovered   0.0975      0.6393 1.3899
+                                                        Admission_Type=Urgent + Diabetes=No + Gender=Male Outcome=Recovered   0.1075      0.6143 1.3354
+                                           Admission_Type=Urgent + Diabetes=No + LOS_Category=Long(8-14d) Outcome=Recovered   0.0500      0.5714 1.2422
+                                          Admission_Type=Urgent + Diabetes=No + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0775      0.6739 1.4650
+                                           Admission_Type=Urgent + Diabetes=No + LOS_Category=Short(1-3d) Outcome=Recovered   0.0600      0.9231 2.0067
+                                               Admission_Type=Urgent + Diabetes=No + Treatment=Medication Outcome=Recovered   0.0625      0.7143 1.5528
+                                                 Admission_Type=Urgent + Disease=Fracture + Gender=Female Outcome=Recovered   0.0400      0.5714 1.2422
+                                                   Admission_Type=Urgent + Disease=Fracture + Gender=Male    Outcome=Stable   0.0475      0.6129 1.9153
+                                                  Admission_Type=Urgent + Disease=Infection + Gender=Male Outcome=Recovered   0.0500      0.8000 1.7391
+                                        Admission_Type=Urgent + Gender=Female + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0400      0.6154 1.3378
+                                          Admission_Type=Urgent + Gender=Male + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0400      0.5714 1.2422
+                                           Admission_Type=Urgent + Gender=Male + LOS_Category=Short(1-3d) Outcome=Recovered   0.0450      0.9474 2.0595
+                                               Admission_Type=Urgent + Gender=Male + Treatment=Medication Outcome=Recovered   0.0400      0.7273 1.5810
+                                       Age_Group=36-50 + BP_Category=Elevated + Charges_Category=Low_Cost Outcome=Recovered   0.0450      0.9474 2.0595
+                                                     Age_Group=36-50 + BP_Category=Elevated + Diabetes=No Outcome=Recovered   0.0800      0.6957 1.5123
+                                                     Age_Group=36-50 + BP_Category=Elevated + Gender=Male Outcome=Recovered   0.0450      0.6923 1.5050
+                                                       Age_Group=36-50 + BP_Category=Normal + Diabetes=No Outcome=Recovered   0.0625      0.8065 1.7532
+                                                       Age_Group=36-50 + BP_Category=Normal + Gender=Male Outcome=Recovered   0.0400      0.8421 1.8307
+                                                Age_Group=36-50 + Charges_Category=Low_Cost + Diabetes=No Outcome=Recovered   0.0850      0.9714 2.1118
+                                          Age_Group=36-50 + Charges_Category=Low_Cost + Disease=Infection Outcome=Recovered   0.0475      1.0000 2.1739
+                                                Age_Group=36-50 + Charges_Category=Low_Cost + Gender=Male Outcome=Recovered   0.0550      1.0000 2.1739
+                                  Age_Group=36-50 + Charges_Category=Low_Cost + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0425      1.0000 2.1739
+                                   Age_Group=36-50 + Charges_Category=Low_Cost + LOS_Category=Short(1-3d) Outcome=Recovered   0.0425      0.9444 2.0531
+                                             Age_Group=36-50 + Charges_Category=Medium_Cost + Diabetes=No Outcome=Recovered   0.0475      0.8261 1.7958
+                                                         Age_Group=36-50 + Diabetes=No + Disease=Fracture Outcome=Recovered   0.0450      0.6429 1.3975
+                                                        Age_Group=36-50 + Diabetes=No + Disease=Infection Outcome=Recovered   0.0575      0.9583 2.0833
+                                                            Age_Group=36-50 + Diabetes=No + Gender=Female Outcome=Recovered   0.0775      0.7209 1.5672
+                                                              Age_Group=36-50 + Diabetes=No + Gender=Male Outcome=Recovered   0.0900      0.6923 1.5050
+                                                 Age_Group=36-50 + Diabetes=No + LOS_Category=Long(8-14d) Outcome=Recovered   0.0425      0.5862 1.2744
+                                                Age_Group=36-50 + Diabetes=No + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0600      1.0000 2.1739
+                                                 Age_Group=36-50 + Diabetes=No + LOS_Category=Short(1-3d) Outcome=Recovered   0.0425      0.9444 2.0531
+                                                     Age_Group=36-50 + Diabetes=No + Treatment=Medication Outcome=Recovered   0.0500      0.7692 1.6722
+                                                        Age_Group=36-50 + Disease=Infection + Gender=Male Outcome=Recovered   0.0450      0.9474 2.0595
+                                                Age_Group=36-50 + Gender=Male + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0400      1.0000 2.1739
+                                       Age_Group=51-65 + BP_Category=Elevated + Charges_Category=Low_Cost Outcome=Recovered   0.0425      0.9444 2.0531
+                                                     Age_Group=51-65 + BP_Category=Elevated + Diabetes=No Outcome=Recovered   0.0750      0.6250 1.3587
+                                                     Age_Group=51-65 + BP_Category=Elevated + Gender=Male Outcome=Recovered   0.0575      0.5610 1.2195
+                                       Age_Group=51-65 + BP_Category=Elevated + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0400      0.7273 1.5810
+                                                       Age_Group=51-65 + BP_Category=Normal + Diabetes=No Outcome=Recovered   0.0500      0.7692 1.6722
+                                                Age_Group=51-65 + Charges_Category=Low_Cost + Diabetes=No Outcome=Recovered   0.0750      0.8333 1.8116
+                                          Age_Group=51-65 + Charges_Category=Low_Cost + Disease=Infection Outcome=Recovered   0.0475      0.9500 2.0652
+                                              Age_Group=51-65 + Charges_Category=Low_Cost + Gender=Female Outcome=Recovered   0.0475      0.9500 2.0652
+                                                Age_Group=51-65 + Charges_Category=Low_Cost + Gender=Male Outcome=Recovered   0.0525      0.7500 1.6304
+                                  Age_Group=51-65 + Charges_Category=Low_Cost + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0425      0.8095 1.7598
+                                   Age_Group=51-65 + Charges_Category=Low_Cost + LOS_Category=Short(1-3d) Outcome=Recovered   0.0550      0.8462 1.8395
+                                             Age_Group=51-65 + Charges_Category=Medium_Cost + Diabetes=No Outcome=Recovered   0.0525      0.6176 1.3427
+                                                         Age_Group=51-65 + Diabetes=No + Disease=Diabetes Outcome=Recovered   0.0475      0.9500 2.0652
+                                                        Age_Group=51-65 + Diabetes=No + Disease=Infection Outcome=Recovered   0.0450      0.9474 2.0595
+                                                            Age_Group=51-65 + Diabetes=No + Gender=Female Outcome=Recovered   0.0650      0.6341 1.3786
+                                                              Age_Group=51-65 + Diabetes=No + Gender=Male Outcome=Recovered   0.0800      0.5517 1.1994
+                                                Age_Group=51-65 + Diabetes=No + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0625      0.7143 1.5528
+                                                 Age_Group=51-65 + Diabetes=No + LOS_Category=Short(1-3d) Outcome=Recovered   0.0450      0.8571 1.8634
+                                          Age_Group=51-65 + Disease=Infection + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0425      0.9444 2.0531
+                                              Age_Group=51-65 + Gender=Female + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0425      0.7727 1.6798
+                                          Age_Group=65+ + BP_Category=High + Charges_Category=Medium_Cost  Outcome=Deceased   0.0475      0.6129 2.7859
+                                                           Age_Group=65+ + BP_Category=High + Diabetes=No  Outcome=Deceased   0.0525      0.5250 2.3864
+                                                           Age_Group=65+ + BP_Category=High + Diabetes=No    Outcome=Stable   0.0425      0.4250 1.3281
+                                                          Age_Group=65+ + BP_Category=High + Diabetes=Yes  Outcome=Deceased   0.0400      0.5714 2.5974
+                                                         Age_Group=65+ + BP_Category=High + Gender=Female  Outcome=Deceased   0.0425      0.5152 2.3416
+                                                           Age_Group=65+ + BP_Category=High + Gender=Male  Outcome=Deceased   0.0500      0.5714 2.5974
+                                                 Age_Group=65+ + Charges_Category=High_Cost + Diabetes=No  Outcome=Deceased   0.0400      0.5714 2.5974
+                                           Age_Group=65+ + Charges_Category=High_Cost + Treatment=Surgery  Outcome=Deceased   0.0400      0.5714 2.5974
+                                                  Age_Group=65+ + Charges_Category=Low_Cost + Diabetes=No    Outcome=Stable   0.0425      0.7083 2.2135
+                                                              Age_Group=65+ + Diabetes=No + Gender=Female    Outcome=Stable   0.0500      0.5128 1.6026
+                                                                Age_Group=65+ + Diabetes=No + Gender=Male    Outcome=Stable   0.0550      0.4783 1.4946
+                                                  Age_Group=65+ + Diabetes=No + LOS_Category=Medium(4-7d)    Outcome=Stable   0.0475      0.6129 1.9153
+                                           BP_Category=Elevated + Charges_Category=Low_Cost + Diabetes=No Outcome=Recovered   0.1025      0.8200 1.7826
+                                     BP_Category=Elevated + Charges_Category=Low_Cost + Disease=Infection Outcome=Recovered   0.0575      0.8519 1.8519
+                                         BP_Category=Elevated + Charges_Category=Low_Cost + Gender=Female Outcome=Recovered   0.0475      0.7600 1.6522
+                                           BP_Category=Elevated + Charges_Category=Low_Cost + Gender=Male Outcome=Recovered   0.0725      0.8529 1.8542
+                             BP_Category=Elevated + Charges_Category=Low_Cost + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0575      0.8214 1.7857
+                              BP_Category=Elevated + Charges_Category=Low_Cost + LOS_Category=Short(1-3d) Outcome=Recovered   0.0625      0.8065 1.7532
+                                        BP_Category=Elevated + Charges_Category=Medium_Cost + Diabetes=No Outcome=Recovered   0.0600      0.5455 1.1858
+                                        BP_Category=Elevated + Charges_Category=Medium_Cost + Gender=Male Outcome=Recovered   0.0425      0.5152 1.1199
+                                                    BP_Category=Elevated + Diabetes=No + Disease=Diabetes Outcome=Recovered   0.0500      0.8333 1.8116
+                                                    BP_Category=Elevated + Diabetes=No + Disease=Fracture Outcome=Recovered   0.0550      0.6471 1.4066
+                                                   BP_Category=Elevated + Diabetes=No + Disease=Infection Outcome=Recovered   0.0600      0.8000 1.7391
+                                                       BP_Category=Elevated + Diabetes=No + Gender=Female Outcome=Recovered   0.0700      0.5833 1.2681
+                                                         BP_Category=Elevated + Diabetes=No + Gender=Male Outcome=Recovered   0.1350      0.5934 1.2900
+                                            BP_Category=Elevated + Diabetes=No + LOS_Category=Long(8-14d) Outcome=Recovered   0.0525      0.5250 1.1413
+                                           BP_Category=Elevated + Diabetes=No + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0800      0.6667 1.4493
+                                            BP_Category=Elevated + Diabetes=No + LOS_Category=Short(1-3d) Outcome=Recovered   0.0550      0.8462 1.8395
+                                               BP_Category=Elevated + Diabetes=No + Treatment=Antibiotics Outcome=Recovered   0.0400      0.6667 1.4493
+                                                BP_Category=Elevated + Diabetes=No + Treatment=Medication Outcome=Recovered   0.0625      0.7353 1.5985
+                                                   BP_Category=Elevated + Disease=Infection + Gender=Male Outcome=Recovered   0.0500      0.7692 1.6722
+                                     BP_Category=Elevated + Disease=Infection + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0400      0.8000 1.7391
+                                           BP_Category=Elevated + Gender=Male + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0600      0.8000 1.7391
+                                                BP_Category=Elevated + Gender=Male + Treatment=Medication Outcome=Recovered   0.0450      0.7200 1.5652
+                                              BP_Category=High + Charges_Category=High_Cost + Diabetes=No  Outcome=Deceased   0.0425      0.5862 2.6646
+                                         BP_Category=High + Charges_Category=High_Cost + Disease=Fracture  Outcome=Deceased   0.0450      0.5625 2.5568
+                                            BP_Category=High + Charges_Category=High_Cost + Gender=Female  Outcome=Deceased   0.0400      0.7273 3.3058
+                              BP_Category=High + Charges_Category=High_Cost + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0525      0.8400 3.8182
+                                        BP_Category=High + Charges_Category=High_Cost + Treatment=Surgery  Outcome=Deceased   0.0425      0.6071 2.7597
+                                                        BP_Category=High + Diabetes=No + Disease=Fracture    Outcome=Stable   0.0425      0.4857 1.5179
+                                                             BP_Category=High + Diabetes=No + Gender=Male    Outcome=Stable   0.0500      0.4762 1.4881
+                                                        BP_Category=High + Disease=Fracture + Gender=Male    Outcome=Stable   0.0425      0.6296 1.9676
+                                        BP_Category=High + Disease=Fracture + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0425      0.7727 3.5124
+                                             BP_Category=Normal + Charges_Category=Low_Cost + Diabetes=No Outcome=Recovered   0.0625      0.8929 1.9410
+                                             BP_Category=Normal + Charges_Category=Low_Cost + Gender=Male Outcome=Recovered   0.0400      0.8421 1.8307
+                                          BP_Category=Normal + Charges_Category=Medium_Cost + Diabetes=No Outcome=Recovered   0.0475      0.7600 1.6522
+                                                      BP_Category=Normal + Diabetes=No + Disease=Fracture Outcome=Recovered   0.0400      0.6667 1.4493
+                                                     BP_Category=Normal + Diabetes=No + Disease=Infection Outcome=Recovered   0.0400      0.9412 2.0460
+                                                         BP_Category=Normal + Diabetes=No + Gender=Female Outcome=Recovered   0.0725      0.6905 1.5010
+                                                           BP_Category=Normal + Diabetes=No + Gender=Male Outcome=Recovered   0.0650      0.7027 1.5276
+                                             BP_Category=Normal + Diabetes=No + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0600      0.8571 1.8634
+                                   Charges_Category=High_Cost + Diabetes=No + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0700      0.4828 2.1944
+                                      Charges_Category=High_Cost + Diabetes=No + LOS_Category=Long(8-14d)    Outcome=Stable   0.0475      0.4318 1.3494
+                                              Charges_Category=High_Cost + Disease=Fracture + Gender=Male    Outcome=Stable   0.0525      0.4375 1.3672
+                              Charges_Category=High_Cost + Disease=Fracture + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0675      0.5400 2.4545
+                                 Charges_Category=High_Cost + Gender=Female + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0425      0.5152 2.3416
+                                   Charges_Category=High_Cost + Gender=Male + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0550      0.5641 2.5641
+                                             Charges_Category=High_Cost + Gender=Male + Treatment=Surgery    Outcome=Stable   0.0500      0.4444 1.3889
+                             Charges_Category=High_Cost + LOS_Category=Extended(15d+) + Treatment=Surgery  Outcome=Deceased   0.0625      0.5208 2.3674
+                                               Charges_Category=Low_Cost + Diabetes=No + Disease=Diabetes Outcome=Recovered   0.0600      0.8000 1.7391
+                                              Charges_Category=Low_Cost + Diabetes=No + Disease=Infection Outcome=Recovered   0.0900      0.8571 1.8634
+                                                  Charges_Category=Low_Cost + Diabetes=No + Gender=Female Outcome=Recovered   0.0825      0.7674 1.6684
+                                                    Charges_Category=Low_Cost + Diabetes=No + Gender=Male Outcome=Recovered   0.1150      0.7302 1.5873
+                                      Charges_Category=Low_Cost + Diabetes=No + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0925      0.6981 1.5176
+                                       Charges_Category=Low_Cost + Diabetes=No + LOS_Category=Short(1-3d) Outcome=Recovered   0.1000      0.8000 1.7391
+                                          Charges_Category=Low_Cost + Diabetes=No + Treatment=Antibiotics Outcome=Recovered   0.0450      0.7200 1.5652
+                                Charges_Category=Low_Cost + Diabetes=No + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0400      0.8421 1.8307
+                                           Charges_Category=Low_Cost + Diabetes=No + Treatment=Medication Outcome=Recovered   0.0550      0.7586 1.6492
+                                           Charges_Category=Low_Cost + Diabetes=No + Treatment=Monitoring Outcome=Recovered   0.0425      0.8500 1.8478
+                                             Charges_Category=Low_Cost + Disease=Diabetes + Gender=Female Outcome=Recovered   0.0475      0.7600 1.6522
+                                  Charges_Category=Low_Cost + Disease=Diabetes + LOS_Category=Short(1-3d) Outcome=Recovered   0.0550      0.8148 1.7713
+                           Charges_Category=Low_Cost + Disease=Diabetes + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0575      0.8214 1.7857
+                                            Charges_Category=Low_Cost + Disease=Infection + Gender=Female Outcome=Recovered   0.0500      0.8696 1.8904
+                                              Charges_Category=Low_Cost + Disease=Infection + Gender=Male Outcome=Recovered   0.0675      0.8182 1.7787
+                                Charges_Category=Low_Cost + Disease=Infection + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0575      0.7931 1.7241
+                                 Charges_Category=Low_Cost + Disease=Infection + LOS_Category=Short(1-3d) Outcome=Recovered   0.0600      0.8889 1.9324
+                                    Charges_Category=Low_Cost + Disease=Infection + Treatment=Antibiotics Outcome=Recovered   0.0475      0.8261 1.7958
+                                     Charges_Category=Low_Cost + Disease=Infection + Treatment=Monitoring Outcome=Recovered   0.0400      0.8889 1.9324
+                                    Charges_Category=Low_Cost + Gender=Female + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0475      0.7037 1.5298
+                                     Charges_Category=Low_Cost + Gender=Female + LOS_Category=Short(1-3d) Outcome=Recovered   0.0650      0.8125 1.7663
+                                      Charges_Category=Low_Cost + Gender=Male + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0650      0.6667 1.4493
+                                       Charges_Category=Low_Cost + Gender=Male + LOS_Category=Short(1-3d) Outcome=Recovered   0.0625      0.7576 1.6469
+                   Charges_Category=Low_Cost + LOS_Category=Short(1-3d) + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0525      0.8077 1.7559
+                                               Charges_Category=Medium_Cost + Diabetes=No + Gender=Female Outcome=Recovered   0.0550      0.5000 1.0870
+                                                 Charges_Category=Medium_Cost + Diabetes=No + Gender=Male Outcome=Recovered   0.0700      0.5283 1.1485
+                                   Charges_Category=Medium_Cost + Diabetes=No + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0675      0.5625 1.2228
+                                        Charges_Category=Medium_Cost + Diabetes=No + Treatment=Medication Outcome=Recovered   0.0500      0.5882 1.2788
+                                    Charges_Category=Medium_Cost + Gender=Male + LOS_Category=Long(8-14d)    Outcome=Stable   0.0450      0.4390 1.3720
+                                                           Diabetes=No + Disease=Diabetes + Gender=Female Outcome=Recovered   0.0500      0.7407 1.6103
+                                                             Diabetes=No + Disease=Diabetes + Gender=Male Outcome=Recovered   0.0400      0.8000 1.7391
+                                                Diabetes=No + Disease=Diabetes + LOS_Category=Short(1-3d) Outcome=Recovered   0.0450      0.8571 1.8634
+                                         Diabetes=No + Disease=Diabetes + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0475      0.8636 1.8775
+                                                           Diabetes=No + Disease=Fracture + Gender=Female Outcome=Recovered   0.0600      0.5455 1.1858
+                                             Diabetes=No + Disease=Fracture + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0425      0.4359 1.9814
+                                                Diabetes=No + Disease=Fracture + LOS_Category=Long(8-14d) Outcome=Recovered   0.0600      0.5854 1.2725
+                                                          Diabetes=No + Disease=Infection + Gender=Female Outcome=Recovered   0.0400      0.7619 1.6563
+                                                            Diabetes=No + Disease=Infection + Gender=Male Outcome=Recovered   0.0825      0.8462 1.8395
+                                              Diabetes=No + Disease=Infection + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0700      0.8485 1.8445
+                                               Diabetes=No + Disease=Infection + LOS_Category=Short(1-3d) Outcome=Recovered   0.0475      0.9048 1.9669
+                                                  Diabetes=No + Disease=Infection + Treatment=Antibiotics Outcome=Recovered   0.0500      0.8000 1.7391
+                                                            Diabetes=No + Disease=Pneumonia + Gender=Male    Outcome=Stable   0.0450      0.4286 1.3393
+                                              Diabetes=No + Disease=Pneumonia + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0400      0.5161 1.1220
+                                                  Diabetes=No + Gender=Female + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0650      0.6047 1.3145
+                                                   Diabetes=No + Gender=Female + LOS_Category=Short(1-3d) Outcome=Recovered   0.0575      0.8519 1.8519
+                                                       Diabetes=No + Gender=Female + Treatment=Medication Outcome=Recovered   0.0425      0.5152 1.1199
+                                                  Diabetes=No + Gender=Male + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0425      0.5152 2.3416
+                                                     Diabetes=No + Gender=Male + LOS_Category=Long(8-14d) Outcome=Recovered   0.0650      0.4727 1.0277
+                                                    Diabetes=No + Gender=Male + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0950      0.6552 1.4243
+                                                     Diabetes=No + Gender=Male + LOS_Category=Short(1-3d) Outcome=Recovered   0.0475      0.7308 1.5886
+                                                        Diabetes=No + Gender=Male + Treatment=Antibiotics Outcome=Recovered   0.0500      0.6452 1.4025
+                                                         Diabetes=No + Gender=Male + Treatment=Medication Outcome=Recovered   0.0675      0.6923 1.5050
+                                                         Diabetes=No + Gender=Male + Treatment=Monitoring Outcome=Recovered   0.0500      0.5556 1.2077
+                                            Diabetes=No + LOS_Category=Extended(15d+) + Treatment=Surgery  Outcome=Deceased   0.0475      0.4750 2.1591
+                                          Diabetes=No + LOS_Category=Medium(4-7d) + Treatment=Antibiotics Outcome=Recovered   0.0425      0.7083 1.5399
+                                           Diabetes=No + LOS_Category=Medium(4-7d) + Treatment=Medication Outcome=Recovered   0.0575      0.6571 1.4286
+                                 Diabetes=No + LOS_Category=Short(1-3d) + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0425      0.8500 1.8478
+                                       Disease=Diabetes + Gender=Female + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0400      0.7619 1.6563
+                            Disease=Diabetes + LOS_Category=Short(1-3d) + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0575      0.8214 1.7857
+                                                Disease=Fracture + Gender=Male + LOS_Category=Long(8-14d)    Outcome=Stable   0.0450      0.5294 1.6544
+                                                       Disease=Fracture + Gender=Male + Treatment=Surgery    Outcome=Stable   0.0400      0.4444 1.3889
+                                       Disease=Fracture + LOS_Category=Extended(15d+) + Treatment=Surgery  Outcome=Deceased   0.0475      0.5429 2.4675
+                                              Disease=Infection + Gender=Male + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0550      0.8148 1.7713
+                 Admission_Type=Elective + BP_Category=Elevated + Charges_Category=Low_Cost + Diabetes=No Outcome=Recovered   0.0400      0.8421 1.8307
+             Admission_Type=Elective + Charges_Category=Low_Cost + Diabetes=No + LOS_Category=Short(1-3d) Outcome=Recovered   0.0400      0.8000 1.7391
+                        Admission_Type=Emergency + Charges_Category=High_Cost + Diabetes=No + Gender=Male  Outcome=Deceased   0.0400      0.5926 2.6936
+        Admission_Type=Emergency + Charges_Category=High_Cost + Diabetes=No + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0450      0.6429 2.9221
+        Admission_Type=Emergency + Charges_Category=High_Cost + Gender=Male + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0400      0.7619 3.4632
+                             Admission_Type=Urgent + Age_Group=36-50 + BP_Category=Elevated + Diabetes=No Outcome=Recovered   0.0450      0.9000 1.9565
+                        Admission_Type=Urgent + Age_Group=36-50 + Charges_Category=Low_Cost + Diabetes=No Outcome=Recovered   0.0500      1.0000 2.1739
+                                    Admission_Type=Urgent + Age_Group=36-50 + Diabetes=No + Gender=Female Outcome=Recovered   0.0475      0.9500 2.0652
+                                      Admission_Type=Urgent + Age_Group=36-50 + Diabetes=No + Gender=Male Outcome=Recovered   0.0475      0.9500 2.0652
+                        Admission_Type=Urgent + Age_Group=51-65 + Charges_Category=Low_Cost + Diabetes=No Outcome=Recovered   0.0400      0.8889 1.9324
+                                    Admission_Type=Urgent + Age_Group=51-65 + Diabetes=No + Gender=Female Outcome=Recovered   0.0400      0.7619 1.6563
+                   Admission_Type=Urgent + BP_Category=Elevated + Charges_Category=Low_Cost + Diabetes=No Outcome=Recovered   0.0500      0.8696 1.8904
+                   Admission_Type=Urgent + BP_Category=Elevated + Charges_Category=Low_Cost + Gender=Male Outcome=Recovered   0.0400      0.9412 2.0460
+                                 Admission_Type=Urgent + BP_Category=Elevated + Diabetes=No + Gender=Male Outcome=Recovered   0.0725      0.7250 1.5761
+                                 Admission_Type=Urgent + BP_Category=Normal + Diabetes=No + Gender=Female Outcome=Recovered   0.0500      0.8000 1.7391
+                      Admission_Type=Urgent + Charges_Category=Low_Cost + Diabetes=No + Disease=Infection Outcome=Recovered   0.0475      0.9048 1.9669
+                            Admission_Type=Urgent + Charges_Category=Low_Cost + Diabetes=No + Gender=Male Outcome=Recovered   0.0650      0.8387 1.8233
+              Admission_Type=Urgent + Charges_Category=Low_Cost + Diabetes=No + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0400      0.6400 1.3913
+               Admission_Type=Urgent + Charges_Category=Low_Cost + Diabetes=No + LOS_Category=Short(1-3d) Outcome=Recovered   0.0575      0.9200 2.0000
+                      Admission_Type=Urgent + Charges_Category=Low_Cost + Disease=Infection + Gender=Male Outcome=Recovered   0.0425      0.8500 1.8478
+               Admission_Type=Urgent + Charges_Category=Low_Cost + Gender=Male + LOS_Category=Short(1-3d) Outcome=Recovered   0.0450      0.9474 2.0595
+                                   Admission_Type=Urgent + Diabetes=No + Disease=Fracture + Gender=Female Outcome=Recovered   0.0400      0.6154 1.3378
+                                    Admission_Type=Urgent + Diabetes=No + Disease=Infection + Gender=Male Outcome=Recovered   0.0450      0.8571 1.8634
+                            Admission_Type=Urgent + Diabetes=No + Gender=Male + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0400      0.6667 1.4493
+                         Age_Group=36-50 + BP_Category=Elevated + Charges_Category=Low_Cost + Diabetes=No Outcome=Recovered   0.0450      0.9474 2.0595
+                                       Age_Group=36-50 + BP_Category=Elevated + Diabetes=No + Gender=Male Outcome=Recovered   0.0425      0.6800 1.4783
+                            Age_Group=36-50 + Charges_Category=Low_Cost + Diabetes=No + Disease=Infection Outcome=Recovered   0.0475      1.0000 2.1739
+                                  Age_Group=36-50 + Charges_Category=Low_Cost + Diabetes=No + Gender=Male Outcome=Recovered   0.0550      1.0000 2.1739
+                    Age_Group=36-50 + Charges_Category=Low_Cost + Diabetes=No + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0400      1.0000 2.1739
+                     Age_Group=36-50 + Charges_Category=Low_Cost + Diabetes=No + LOS_Category=Short(1-3d) Outcome=Recovered   0.0425      0.9444 2.0531
+                                          Age_Group=36-50 + Diabetes=No + Disease=Infection + Gender=Male Outcome=Recovered   0.0425      0.9444 2.0531
+                                  Age_Group=36-50 + Diabetes=No + Gender=Male + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0400      1.0000 2.1739
+                                       Age_Group=51-65 + BP_Category=Elevated + Diabetes=No + Gender=Male Outcome=Recovered   0.0550      0.5946 1.2926
+                     Age_Group=51-65 + Charges_Category=Low_Cost + Diabetes=No + LOS_Category=Short(1-3d) Outcome=Recovered   0.0425      0.8500 1.8478
+                       BP_Category=Elevated + Charges_Category=Low_Cost + Diabetes=No + Disease=Infection Outcome=Recovered   0.0450      0.8182 1.7787
+                             BP_Category=Elevated + Charges_Category=Low_Cost + Diabetes=No + Gender=Male Outcome=Recovered   0.0675      0.8438 1.8342
+               BP_Category=Elevated + Charges_Category=Low_Cost + Diabetes=No + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0475      0.7917 1.7210
+                BP_Category=Elevated + Charges_Category=Low_Cost + Diabetes=No + LOS_Category=Short(1-3d) Outcome=Recovered   0.0550      0.8462 1.8395
+                          BP_Category=Elevated + Charges_Category=Medium_Cost + Diabetes=No + Gender=Male Outcome=Recovered   0.0425      0.6296 1.3688
+                                     BP_Category=Elevated + Diabetes=No + Disease=Infection + Gender=Male Outcome=Recovered   0.0475      0.8261 1.7958
+                             BP_Category=Elevated + Diabetes=No + Gender=Male + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0575      0.8214 1.7857
+                                  BP_Category=Elevated + Diabetes=No + Gender=Male + Treatment=Medication Outcome=Recovered   0.0450      0.8182 1.7787
+           BP_Category=High + Charges_Category=High_Cost + Disease=Fracture + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0425      0.8095 3.6797
+                Charges_Category=High_Cost + Diabetes=No + Disease=Fracture + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0425      0.4595 2.0885
+                     Charges_Category=High_Cost + Diabetes=No + Gender=Male + LOS_Category=Extended(15d+)  Outcome=Deceased   0.0425      0.5484 2.4927
+               Charges_Category=High_Cost + Diabetes=No + LOS_Category=Extended(15d+) + Treatment=Surgery  Outcome=Deceased   0.0475      0.4750 2.1591
+                          Charges_Category=High_Cost + Disease=Fracture + Gender=Male + Treatment=Surgery    Outcome=Stable   0.0400      0.4571 1.4286
+          Charges_Category=High_Cost + Disease=Fracture + LOS_Category=Extended(15d+) + Treatment=Surgery  Outcome=Deceased   0.0475      0.5429 2.4675
+                    Charges_Category=Low_Cost + Diabetes=No + Disease=Diabetes + LOS_Category=Short(1-3d) Outcome=Recovered   0.0400      0.8421 1.8307
+             Charges_Category=Low_Cost + Diabetes=No + Disease=Diabetes + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0400      0.8421 1.8307
+                                Charges_Category=Low_Cost + Diabetes=No + Disease=Infection + Gender=Male Outcome=Recovered   0.0600      0.8571 1.8634
+                  Charges_Category=Low_Cost + Diabetes=No + Disease=Infection + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0425      0.8095 1.7598
+                   Charges_Category=Low_Cost + Diabetes=No + Disease=Infection + LOS_Category=Short(1-3d) Outcome=Recovered   0.0475      0.9048 1.9669
+                       Charges_Category=Low_Cost + Diabetes=No + Gender=Female + LOS_Category=Short(1-3d) Outcome=Recovered   0.0525      0.8400 1.8261
+                        Charges_Category=Low_Cost + Diabetes=No + Gender=Male + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0625      0.7143 1.5528
+                         Charges_Category=Low_Cost + Diabetes=No + Gender=Male + LOS_Category=Short(1-3d) Outcome=Recovered   0.0475      0.7600 1.6522
+Charges_Category=Low_Cost + Disease=Diabetes + LOS_Category=Short(1-3d) + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0525      0.8077 1.7559
+              Diabetes=No + Disease=Diabetes + LOS_Category=Short(1-3d) + Treatment=Lifestyle_Counselling Outcome=Recovered   0.0425      0.8500 1.8478
+                                Diabetes=No + Disease=Infection + Gender=Male + LOS_Category=Medium(4-7d) Outcome=Recovered   0.0500      0.8696 1.8904
+     Admission_Type=Urgent + BP_Category=Elevated + Charges_Category=Low_Cost + Diabetes=No + Gender=Male Outcome=Recovered   0.0400      0.9412 2.0460
